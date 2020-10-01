@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5A660241DA5D5A6527D45524 /* Pods_CurrencyExchangeRateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A43A913D9EA403527E1E6EE /* Pods_CurrencyExchangeRateApp.framework */; };
 		AFEDFAAF2525F7A400E7C3D2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDFAAE2525F7A400E7C3D2 /* BaseViewController.swift */; };
-		AFEDFAB22526031800E7C3D2 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AFEDFAB12526031800E7C3D2 /* .swiftlint.yml */; };
 		AFFF676E2525F23700746EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF676D2525F23700746EF7 /* AppDelegate.swift */; };
 		AFFF67702525F23700746EF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF676F2525F23700746EF7 /* SceneDelegate.swift */; };
 		AFFF67772525F23A00746EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFF67762525F23A00746EF7 /* Assets.xcassets */; };
@@ -224,8 +223,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFFF67942525F23A00746EF7 /* Build configuration list for PBXNativeTarget "CurrencyExchangeRateApp" */;
 			buildPhases = (
-				AFEDFAB02525FB4B00E7C3D2 /* Run Script */,
 				089E16AD7CC42822033B6DD9 /* [CP] Check Pods Manifest.lock */,
+				AFEDFAB02525FB4B00E7C3D2 /* Run Script */,
 				AFFF67662525F23700746EF7 /* Sources */,
 				AFFF67672525F23700746EF7 /* Frameworks */,
 				AFFF67682525F23700746EF7 /* Resources */,
@@ -325,7 +324,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFEDFAB22526031800E7C3D2 /* .swiftlint.yml in Resources */,
 				AFFF677A2525F23A00746EF7 /* LaunchScreen.storyboard in Resources */,
 				AFFF67A72525F41800746EF7 /* CurrencyList.storyboard in Resources */,
 				AFFF67772525F23A00746EF7 /* Assets.xcassets in Resources */,
