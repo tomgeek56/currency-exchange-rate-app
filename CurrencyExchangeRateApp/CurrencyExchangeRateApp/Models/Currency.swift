@@ -1,5 +1,5 @@
 //
-//  Config.swift
+//  Currency.swift
 //  CurrencyExchangeRateApp
 //
 //  Created by GeeksDeck on 01/10/2020.
@@ -8,6 +8,7 @@
 
 import UIKit
 
-struct Config {
-    static let BaseUrl = "https://api.exchangeratesapi.io"
+struct Currency {
+    var name: String
+    var value: Double
 }

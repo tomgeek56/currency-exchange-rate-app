@@ -15,21 +15,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulz-fo-PML">
-                                <rect key="frame" x="95" y="256" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0q3-G9-hKg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hzX-fl-mQ1" firstAttribute="bottom" secondItem="0q3-G9-hKg" secondAttribute="bottom" id="F0K-Bn-2ME"/>
+                            <constraint firstItem="hzX-fl-mQ1" firstAttribute="trailing" secondItem="0q3-G9-hKg" secondAttribute="trailing" id="ZVv-ga-b8S"/>
+                            <constraint firstItem="0q3-G9-hKg" firstAttribute="top" secondItem="hzX-fl-mQ1" secondAttribute="top" id="hWM-YL-7cI"/>
+                            <constraint firstItem="0q3-G9-hKg" firstAttribute="leading" secondItem="hzX-fl-mQ1" secondAttribute="leading" id="tjK-K3-QH1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hzX-fl-mQ1"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="0q3-G9-hKg" id="wUp-2Z-P6R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RaT-z3-N0i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="67" y="91"/>
+            <point key="canvasLocation" x="66.666666666666671" y="90.401785714285708"/>
         </scene>
     </scenes>
 </document>

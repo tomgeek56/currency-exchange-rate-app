@@ -6,6 +6,7 @@ target 'CurrencyExchangeRateApp' do
   use_frameworks!
 
   pod 'SwiftLint', '0.40.3'
+  pod 'ReachabilitySwift', '5.0.0'
 
   target 'CurrencyExchangeRateAppTests' do
     inherit! :search_paths

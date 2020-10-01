@@ -1,13 +1,13 @@
 //
-//  Config.swift
+//  Request.swift
 //  CurrencyExchangeRateApp
 //
 //  Created by GeeksDeck on 01/10/2020.
 //  Copyright © 2020 Tomasz Cegiełka. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-struct Config {
-    static let BaseUrl = "https://api.exchangeratesapi.io"
+protocol Requestable {
+    func getUrl() -> URL?
 }
