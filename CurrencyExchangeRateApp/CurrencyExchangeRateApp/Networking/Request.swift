@@ -45,4 +45,11 @@ extension Request {
         return data.map { String($0) }.joined(separator: "&")
         
     }
+    
+    static func getDateRequestFormat(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter.string(from: date)
+        
+    }
 }

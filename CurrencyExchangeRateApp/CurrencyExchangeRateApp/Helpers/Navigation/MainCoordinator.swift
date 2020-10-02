@@ -22,9 +22,10 @@ class MainCoordinator: Coordinator {
         self.navigationController.pushViewController(vc, animated: true)
     }
     
-    func currencyDetail() {
-        let vc = CurrencyDetailViewController.getInstance()
+    func currencyDetail(currency: Currency) {
+        let vc = CurrencyDetailViewController.getInstance()        
         vc.coordinator = self
+        vc.currency = currency
         self.navigationController.pushViewController(vc, animated: true)
     }
     

@@ -52,7 +52,7 @@ extension CurrencyListViewController: UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.coordinator?.currencyDetail()
+        self.coordinator?.currencyDetail(currency: currencyListViewModel.currencies.value[indexPath.row])
     }
     
 }
