@@ -32,7 +32,6 @@ class CurrencyListViewController: BaseViewController {
         self.tableView.registerNibAndReuseIdentifierForCell(cell: CurrencyTableViewCell.self)
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 44
-        self.tableView.allowsSelection = false
     }
 }
 
@@ -50,6 +49,10 @@ extension CurrencyListViewController: UITableViewDataSource, UITableViewDelegate
         cell.configure(currencyListViewModel.currencies.value[indexPath.row])
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.coordinator?.currencyDetail()
     }
     
 }

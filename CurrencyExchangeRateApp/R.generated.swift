@@ -89,12 +89,30 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
   struct storyboard {
+    /// Storyboard `BaseNavigationViewController`.
+    static let baseNavigationViewController = _R.storyboard.baseNavigationViewController()
+    /// Storyboard `CurrencyDetail`.
+    static let currencyDetail = _R.storyboard.currencyDetail()
     /// Storyboard `CurrencyList`.
     static let currencyList = _R.storyboard.currencyList()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "BaseNavigationViewController", bundle: ...)`
+    static func baseNavigationViewController(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.baseNavigationViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "CurrencyDetail", bundle: ...)`
+    static func currencyDetail(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.currencyDetail)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "CurrencyList", bundle: ...)`
@@ -118,7 +136,7 @@ struct R: Rswift.Validatable {
   struct info {
     struct uiApplicationSceneManifest {
       static let _key = "UIApplicationSceneManifest"
-      static let uiApplicationSupportsMultipleScenes = false
+      static let uiApplicationSupportsMultipleScenes = true
 
       struct uiSceneConfigurations {
         static let _key = "UISceneConfigurations"
@@ -206,12 +224,50 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       #if os(iOS) || os(tvOS)
+      try baseNavigationViewController.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
+      try currencyDetail.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try currencyList.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try launchScreen.validate()
       #endif
     }
+
+    #if os(iOS) || os(tvOS)
+    struct baseNavigationViewController: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = BaseNavigationViewController
+
+      let bundle = R.hostingBundle
+      let name = "BaseNavigationViewController"
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct currencyDetail: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = CurrencyDetailViewController
+
+      let bundle = R.hostingBundle
+      let name = "CurrencyDetail"
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     struct currencyList: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
