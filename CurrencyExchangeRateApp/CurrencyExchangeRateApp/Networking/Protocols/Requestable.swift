@@ -9,5 +9,6 @@
 import Foundation
 
 protocol Requestable {
+    init(methodName: String, params: [String: Any]?)
     func getUrl() -> URL?
 }

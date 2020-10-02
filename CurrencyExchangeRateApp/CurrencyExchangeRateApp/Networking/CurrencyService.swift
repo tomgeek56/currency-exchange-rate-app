@@ -9,16 +9,13 @@
 import UIKit
 
 struct CurrencyService {
-    
-    struct CurrencyListRequest: Requestable {
+    static func getCurrenciesList(baseCurrency: String, completion: @escaping (CurrencyList) -> Void, failure:  @escaping () -> Void, noInternetConnection: @escaping  () -> Void) {
         
-        func getUrl() -> URL? {
-            return Request.makeUrl(method: "latest", params: ["base": "PLN"])
-        }
+        let request = Request(methodName: "latest", params: ["base": baseCurrency])
         
-    }
-    
-    static func getCurrenciesList(completion: @escaping (CurrencyList) -> Void, failure:  @escaping () -> Void, noInternetConnection: @escaping  () -> Void) {
-  
+        Service.get(request: request, completion: { (response: CurrencyList) in
+            completion(response)
+        }, failure: failure, noInternetConnection: noInternetConnection)
+        
     }
 }

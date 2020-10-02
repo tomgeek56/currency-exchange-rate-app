@@ -20,6 +20,7 @@
 		AF485797252744F2006733F8 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF485796252744F2006733F8 /* BaseNavigationViewController.swift */; };
 		AF48579925274D06006733F8 /* CurrencyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48579825274D06006733F8 /* CurrencyDetailViewController.swift */; };
 		AF48579B25274DD4006733F8 /* CurrencyDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF48579A25274DD4006733F8 /* CurrencyDetail.storyboard */; };
+		AF48579D252758C7006733F8 /* CurrencyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48579C252758C7006733F8 /* CurrencyDetailViewModel.swift */; };
 		AFEDFAAF2525F7A400E7C3D2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDFAAE2525F7A400E7C3D2 /* BaseViewController.swift */; };
 		AFEDFAB82526088600E7C3D2 /* CurrencyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDFAB72526088600E7C3D2 /* CurrencyListViewModel.swift */; };
 		AFEDFABB252608C600E7C3D2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDFABA252608C600E7C3D2 /* Currency.swift */; };
@@ -78,6 +79,7 @@
 		AF485796252744F2006733F8 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		AF48579825274D06006733F8 /* CurrencyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewController.swift; sourceTree = "<group>"; };
 		AF48579A25274DD4006733F8 /* CurrencyDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrencyDetail.storyboard; sourceTree = "<group>"; };
+		AF48579C252758C7006733F8 /* CurrencyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewModel.swift; sourceTree = "<group>"; };
 		AFEDFAAE2525F7A400E7C3D2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AFEDFAB12526031800E7C3D2 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AFEDFAB72526088600E7C3D2 /* CurrencyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModel.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				AFEDFAB72526088600E7C3D2 /* CurrencyListViewModel.swift */,
+				AF48579C252758C7006733F8 /* CurrencyDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -627,6 +630,7 @@
 				AFEDFAC725262B4C00E7C3D2 /* Request.swift in Sources */,
 				AFEDFAAF2525F7A400E7C3D2 /* BaseViewController.swift in Sources */,
 				AFEDFAB82526088600E7C3D2 /* CurrencyListViewModel.swift in Sources */,
+				AF48579D252758C7006733F8 /* CurrencyDetailViewModel.swift in Sources */,
 				AFFF67A02525F31000746EF7 /* Config.swift in Sources */,
 				AF48579325273C77006733F8 /* Storyboarded.swift in Sources */,
 				AFFF676E2525F23700746EF7 /* AppDelegate.swift in Sources */,

@@ -17,10 +17,7 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        
-//        let vc = CurrencyDetailViewController.getInstance()
-        
-                let vc = CurrencyListViewController.getInstance()
+        let vc = CurrencyListViewController.getInstance()
         vc.coordinator = self
         self.navigationController.pushViewController(vc, animated: true)
     }

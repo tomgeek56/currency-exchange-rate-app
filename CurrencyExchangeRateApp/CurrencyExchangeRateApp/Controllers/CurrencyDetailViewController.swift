@@ -10,10 +10,13 @@ import UIKit
 
 class CurrencyDetailViewController: BaseViewController {
 
+    var currency: Currency?
+    var currencyDetailViewModel: CurrencyDetailViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        currencyDetailViewModel = CurrencyDetailViewModel(self.currency)
+        currencyDetailViewModel?.fetchData()
     }
     
 }

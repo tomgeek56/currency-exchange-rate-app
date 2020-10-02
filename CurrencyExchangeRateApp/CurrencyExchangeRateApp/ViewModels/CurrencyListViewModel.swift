@@ -17,13 +17,14 @@ struct CurrencyListViewModel {
         self.currencies = Dynamic([])
     }
     
-    func fetchData() {        
-        Service.get(request: CurrencyService.CurrencyListRequest(), completion: { (response: CurrencyList) in
+    func fetchData() {
+        
+        CurrencyService.getCurrenciesList(baseCurrency: Config.BASE_CURRENCY, completion: { (response) in
             self.currencies.value = response.getCurrencies()
         }, failure: {
-        
+            
         }, noInternetConnection: {
-        
+            
         })
         
     }

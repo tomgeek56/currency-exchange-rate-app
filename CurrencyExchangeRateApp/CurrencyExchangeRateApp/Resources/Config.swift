@@ -9,5 +9,7 @@
 import UIKit
 
 struct Config {
-    static let BaseUrl = "https://api.exchangeratesapi.io"
+    static let BASE_URL = "https://api.exchangeratesapi.io"
+    static let BASE_CURRENCY = "PLN"
+
 }
