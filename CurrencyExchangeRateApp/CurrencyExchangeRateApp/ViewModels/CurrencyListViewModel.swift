@@ -9,8 +9,22 @@
 import UIKit
 
 struct CurrencyListViewModel {
+    
+    var currencies: Dynamic<[Currency]>
+    var errorHandler: ((String) -> Void)?
 
-    func fetchData() {
-      //  Service.get()
+    init() {
+        self.currencies = Dynamic([])
+    }
+    
+    func fetchData() {        
+        Service.get(request: CurrencyService.CurrencyListRequest(), completion: { (response: CurrencyList) in
+            self.currencies.value = response.getCurrencies()
+        }, failure: {
+        
+        }, noInternetConnection: {
+        
+        })
+        
     }
 }

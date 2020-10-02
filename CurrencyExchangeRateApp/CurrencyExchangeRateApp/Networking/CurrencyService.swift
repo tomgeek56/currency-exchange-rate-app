@@ -19,12 +19,6 @@ struct CurrencyService {
     }
     
     static func getCurrenciesList(completion: @escaping (CurrencyList) -> Void, failure:  @escaping () -> Void, noInternetConnection: @escaping  () -> Void) {
-//        Service.get { (list: CurrencyList) in
-//            completion(list)
-//        }
-        
-        Service.get(request: CurrencyService.CurrencyListRequest(), completion: { (response: CurrencyList) in
-            completion(response)
-        }, failure: failure, noInternetConnection: noInternetConnection)
+  
     }
 }

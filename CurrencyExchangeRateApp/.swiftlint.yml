@@ -1,6 +1,7 @@
 excluded: # paths to ignore during linting. overridden by `included`.
+  - R.generated.swift
   - Pods
-#  TODO - PATH TO R.generated XLProjectName/Helpers/R-Swift/R.generated.swift
+  - CurrencyExchangeRateApp/Resources
 # parameterized rules can be customized from this configuration file
 file_length:
   - 700
@@ -17,3 +18,6 @@ type_body_length:
   - 400 # error
 disabled_rules:
   - trailing_whitespace
+  - type_name
+  - identifier_name
+  - line_length

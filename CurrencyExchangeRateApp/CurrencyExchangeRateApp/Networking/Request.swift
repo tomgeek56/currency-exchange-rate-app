@@ -11,7 +11,7 @@ import UIKit
 struct Request {
     static func makeUrl(method: String, params: [String: Any]?) -> URL? {
         
-        let method =  "\(Config.BaseUrl)\\\(method)"
+        let method =  "\(Config.BaseUrl)/\(method)"
         
         guard let url = URL(string: method) else {
             return nil

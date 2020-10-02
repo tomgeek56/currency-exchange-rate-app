@@ -32,6 +32,7 @@ struct Service {
             } catch {}
             
             let session = URLSession(configuration: Service.sessionConfiguration)
+           
             guard let url = request.getUrl() else {
                 failure()
                 return
@@ -50,8 +51,9 @@ struct Service {
                 
                 do {
                     let json = try JSONDecoder().decode(T.self, from: data)
-                    completion(json)
-                    
+                    DispatchQueue.main.async {
+                        completion(json)
+                    }
                 } catch {
                     print("Unexpected error: \(error).")
                     failure()

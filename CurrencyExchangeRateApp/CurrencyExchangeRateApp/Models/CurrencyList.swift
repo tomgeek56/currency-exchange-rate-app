@@ -9,12 +9,17 @@
 import UIKit
 
 struct CurrencyList: Codable {
-
+    
     var rates: [String: Double]
     let base: String?
     let date: String?
+    
 }
 
 extension CurrencyList {
-
+    func getCurrencies() -> [Currency] {
+        return self.rates.map { (key, value) -> Currency in
+            return Currency(name: key, value: value)
+        }
+    }
 }

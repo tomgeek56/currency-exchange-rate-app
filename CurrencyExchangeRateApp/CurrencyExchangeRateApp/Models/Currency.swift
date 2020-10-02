@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Currency {
+struct Currency: Codable {
     var name: String
     var value: Double
 }
