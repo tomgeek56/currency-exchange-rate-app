@@ -15,20 +15,25 @@ class CurrencyListViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        currencyListViewModel.fetchData()
-        currencyListViewModel.currencies.addObserver { (_) in
-            self.tableView.reloadData()
-        }
-        
         loadUI()
     }
     
     func loadUI() {
+        currencyListViewModel.errorHandler = { (message) in
+            self.showErrorAlert(message)
+        }
+        
+        currencyListViewModel.currencies.addObserver { (_) in
+            self.tableView.reloadData()
+        }
+        
+        currencyListViewModel.fetchData()
+        
+        self.title = R.string.localizable.app_title()
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
         self.tableView.tableHeaderView = UIView(frame: CGRect.zero)
-        self.tableView.register(CurrencyTableViewCell.self, forCellReuseIdentifier: CurrencyTableViewCell.identifier)
         self.tableView.registerNibAndReuseIdentifierForCell(cell: CurrencyTableViewCell.self)
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 44
@@ -47,7 +52,6 @@ extension CurrencyListViewController: UITableViewDataSource, UITableViewDelegate
         }
         
         cell.configure(currencyListViewModel.currencies.value[indexPath.row])
-        
         return cell
     }
     

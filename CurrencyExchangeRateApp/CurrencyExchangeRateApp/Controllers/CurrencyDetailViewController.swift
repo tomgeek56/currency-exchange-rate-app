@@ -10,6 +10,7 @@ import UIKit
 
 class CurrencyDetailViewController: BaseViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var labelBaseCurrency: UILabel!
     @IBOutlet weak var labelBaseCurrencyDetail: UILabel!
     @IBOutlet weak var labelSecondCurrency: UILabel!
@@ -27,21 +28,32 @@ class CurrencyDetailViewController: BaseViewController {
     
     func loadUI() {
         
-        currencyDetailViewModel?.currencyBaseTitle.addObserver(listener: { (value) in
-            self.labelBaseCurrency.text = value
+        currencyDetailViewModel?.errorHandler = { (message) in
+            self.showErrorAlert(message)
+        }
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
+        self.tableView.tableHeaderView = UIView(frame: CGRect.zero)
+        self.tableView.registerNibAndReuseIdentifierForCell(cell: CurrencyDetailTableViewCell.self)
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 44
+        
+        currencyDetailViewModel?.currencyBase.addObserver(listener: { (value) in
+            self.labelBaseCurrency.text = value.name
+            self.labelBaseCurrencyDetail.text = value.getStringRepresentation()
         })
         
-        currencyDetailViewModel?.currencyBaseValue.addObserver(listener: { (value) in
-            self.labelBaseCurrencyDetail.text = "\(value)"
+        currencyDetailViewModel?.secondCurrency.addObserver(listener: { (value) in
+            self.labelSecondCurrency.text = value.name
+            self.labelSecondCurrencyDetail.text = value.getStringRepresentation()
         })
         
-        currencyDetailViewModel?.secondCurrencyTitle.addObserver(listener: { (value) in
-            self.labelSecondCurrency.text = "\(value)"
+        currencyDetailViewModel?.results.addObserver(listener: { (_) in
+            self.tableView.reloadData()
         })
         
-        currencyDetailViewModel?.secondCurrencyValue.addObserver(listener: { (value) in
-            self.labelSecondCurrencyDetail.text = "\(value)"
-        })
     }
     
 }
@@ -53,11 +65,11 @@ extension CurrencyDetailViewController: UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell =  tableView.dequeueReusableCell(withIdentifier: CurrencyTableViewCell.identifier, for: indexPath) as? CurrencyTableViewCell else {
+        guard let cell =  tableView.dequeueReusableCell(withIdentifier: CurrencyDetailTableViewCell.identifier, for: indexPath) as? CurrencyDetailTableViewCell else {
             return UITableViewCell()
         }
         
-        //        cell.configure(currencyListViewModel.currencies.value[indexPath.row])
+        cell.configure(currencyDetailViewModel!.results.value[indexPath.row])
         
         return cell
     }

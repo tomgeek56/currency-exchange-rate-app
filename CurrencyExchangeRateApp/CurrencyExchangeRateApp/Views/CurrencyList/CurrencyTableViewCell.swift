@@ -20,7 +20,7 @@ class CurrencyTableViewCell: ReusableCell {
     
     func configure(_ model: Currency) {
         self.labelTitle.text = model.name
-        self.labelSubtitle.text = "\(model.value)"
+        self.labelSubtitle.text = "\(model.value.getCurrencyRepresentation(for: model.name))"
     }
     
 }

@@ -1,0 +1,17 @@
+/* 
+  Strings.strings
+  CurrencyExchangeRateApp
+
+  Created by GeeksDeck on 03/10/2020.
+  Copyright © 2020 Tomasz Cegiełka. All rights reserved.
+*/
+
+
+"app_title" = "Exchange Rates";
+"no_internet_connection" = "There is no internet connection";
+"unexpected_error" = "Some error occured";
+"server_error" = "Server Error";
+"error_occured" = "Error occured";
+"ok" = "Ok";
+
+

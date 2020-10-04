@@ -20,43 +20,67 @@ struct Service {
         return config
     }()
     
-    static func get<T: Codable, R: Requestable>(request: R, completion: @escaping (T) -> Void, failure: @escaping () -> Void, noInternetConnection: @escaping () -> Void) {
+    static func parse<T: Codable>(_ data: Data?) -> T? {
+        
+        guard let data = data else {
+            return nil
+        }
+        
+        do {
+            let json = try JSONDecoder().decode(T.self, from: data)
+            return json
+        } catch {
+            print("Unexpected error: \(error).")
+            return nil
+        }
+        
+    }
+    
+    static func get<T: Codable, R: Requestable>(request: R, completion: @escaping (T) -> Void, failure: @escaping (ErrorRequest) -> Void) {
         
         DispatchQueue.global(qos: .background).async {
             
             do {
                 if try Reachability().connection == .unavailable {
-                    noInternetConnection()
+                    DispatchQueue.main.async {
+                        failure(ErrorRequest(errorType: .noInternetConnection))
+                    }
                     return
                 }
             } catch {}
             
             let session = URLSession(configuration: Service.sessionConfiguration)
-           
+            
             guard let url = request.getUrl() else {
-                failure()
+                DispatchQueue.main.async {
+                    failure(ErrorRequest(errorType: .requestFailure))
+                }
                 return
             }
             
             session.dataTask(with: url) { (data, _, error) in
-                if let _ = error {
-                    failure()
-                    return
-                }
-                
-                guard let data = data else {
-                    failure()
-                    return
-                }
-                
-                do {
-                    let json = try JSONDecoder().decode(T.self, from: data)
-                    DispatchQueue.main.async {
-                        completion(json)
+                DispatchQueue.main.async {
+                    
+                    if let _ = error {
+                        
+                        failure(ErrorRequest(errorType: .requestFailure))
+                        return
                     }
-                } catch {
-                    print("Unexpected error: \(error).")
-                    failure()
+                    
+                    guard let data = data else {
+                        failure(ErrorRequest(errorType: .requestFailure))
+                        return
+                    }
+                    
+                    //let json:T =  completion(Service.parse(data)
+                    
+                    if let json: T = Service.parse(data) {
+                        completion(json)
+                        
+                    } else {
+                        failure(ErrorRequest(errorType: .requestFailure))
+                    }
+                    
                 }
                 
             }.resume()

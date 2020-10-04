@@ -12,7 +12,7 @@ struct CurrencyListViewModel {
     
     var currencies: Dynamic<[Currency]>
     var errorHandler: ((String) -> Void)?
-
+    
     init() {
         self.currencies = Dynamic([])
     }
@@ -21,10 +21,8 @@ struct CurrencyListViewModel {
         
         CurrencyService.getCurrenciesList(baseCurrency: Config.BASE_CURRENCY, completion: { (response) in
             self.currencies.value = response.getCurrencies()
-        }, failure: {
-            
-        }, noInternetConnection: {
-            
+        }, failure: { (error) in
+            self.errorHandler?(error.getMeesage())
         })
         
     }

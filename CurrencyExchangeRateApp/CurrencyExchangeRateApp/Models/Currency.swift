@@ -12,3 +12,9 @@ struct Currency: Codable {
     var name: String
     var value: Double
 }
+
+extension Currency {
+    func getStringRepresentation() -> String {
+        return "\(self.value.getCurrencyRepresentation(for: self.name))"
+    }
+}

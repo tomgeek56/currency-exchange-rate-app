@@ -9,17 +9,17 @@
 import UIKit
 
 struct CurrencyService {
-    static func getCurrenciesList(baseCurrency: String, completion: @escaping (CurrencyList) -> Void, failure:  @escaping () -> Void, noInternetConnection: @escaping  () -> Void) {
+    static func getCurrenciesList(baseCurrency: String, completion: @escaping (CurrencyList) -> Void, failure:  @escaping (ErrorRequest) -> Void) {
         
         let request = Request(methodName: "latest", params: ["base": baseCurrency])
         
         Service.get(request: request, completion: { (response: CurrencyList) in
             completion(response)
-        }, failure: failure, noInternetConnection: noInternetConnection)
+        }, failure: failure)
         
     }
     
-    static func getCurrencyDetail(baseCurrency: String, secondCurrency: String, from: Date, to: Date, completion: @escaping (CurrencyDetail) -> Void, failure:  @escaping () -> Void, noInternetConnection: @escaping  () -> Void) {
+    static func getCurrencyDetail(baseCurrency: String, secondCurrency: String, from: Date, to: Date, completion: @escaping (CurrencyDetail) -> Void, failure:  @escaping (ErrorRequest) -> Void) {
         
         var params = [String: Any]()
         params["base"] = baseCurrency
@@ -29,9 +29,9 @@ struct CurrencyService {
         
         let request = Request(methodName: "history", params: params)
         
-        Service.get(request: request, completion: { (_: CurrencyList) in
-//            completion(response)
-        }, failure: failure, noInternetConnection: noInternetConnection)
+        Service.get(request: request, completion: { (response: CurrencyDetail) in
+            completion(response)
+        }, failure: failure)
         
     }
 }

@@ -11,5 +11,6 @@ import UIKit
 struct Config {
     static let BASE_URL = "https://api.exchangeratesapi.io"
     static let BASE_CURRENCY = "PLN"
+    static let API_DATE_FORMAT = "yyyy-MM-dd"
 
 }

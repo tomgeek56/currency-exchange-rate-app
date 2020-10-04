@@ -47,9 +47,7 @@ extension Request {
     }
     
     static func getDateRequestFormat(date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        return formatter.string(from: date)
+        return Date.dateFormatter.string(from: date)
         
     }
 }

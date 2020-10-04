@@ -23,22 +23,13 @@ class BaseViewController: UIViewController, Storyboarded {
     }
     // swiftlint:disable:previous force_cast
     
-    static func instantiate() -> Self? {
-          // this pulls out "MyApp.MyViewController"
-          let fullName = NSStringFromClass(self)
-
-          // this splits by the dot and uses everything after, giving "MyViewController"
-          let className = fullName.components(separatedBy: ".")[1]
-
-          // load our storyboard
-          let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-
-          // instantiate a view controller with that identifier, and force cast as the type that was requested
-          return storyboard.instantiateViewController(withIdentifier: className) as? Self
-      }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func showErrorAlert(_ message: String) {
+        let controller = UIAlertController(title: "An error occured", message: message, preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: R.string.localizable.ok(), style: .default, handler: {(_) in
+            controller.dismiss(animated: true, completion: nil)
+        }
+        ))
+        self.present(controller, animated: true, completion: nil)
     }
-
+    
 }

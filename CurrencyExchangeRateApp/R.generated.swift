@@ -132,6 +132,20 @@ struct R: Rswift.Validatable {
   }
   #endif
 
+  /// This `R.file` struct is generated, and contains static references to 1 files.
+  struct file {
+    /// Resource file `currencyListSample.json`.
+    static let currencyListSampleJson = Rswift.FileResource(bundle: R.hostingBundle, name: "currencyListSample", pathExtension: "json")
+
+    /// `bundle.url(forResource: "currencyListSample", withExtension: "json")`
+    static func currencyListSampleJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.currencyListSampleJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    fileprivate init() {}
+  }
+
   /// This `R.info` struct is generated, and contains static references to 1 properties.
   struct info {
     struct uiApplicationSceneManifest {
@@ -163,10 +177,20 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
   struct nib {
+    /// Nib `CurrencyDetailTableViewCell`.
+    static let currencyDetailTableViewCell = _R.nib._CurrencyDetailTableViewCell()
     /// Nib `CurrencyTableViewCell`.
     static let currencyTableViewCell = _R.nib._CurrencyTableViewCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CurrencyDetailTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.currencyDetailTableViewCell) instead")
+    static func currencyDetailTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.currencyDetailTableViewCell)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "CurrencyTableViewCell", in: bundle)`
@@ -176,8 +200,113 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    static func currencyDetailTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CurrencyDetailTableViewCell? {
+      return R.nib.currencyDetailTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CurrencyDetailTableViewCell
+    }
+
     static func currencyTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CurrencyTableViewCell? {
       return R.nib.currencyTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CurrencyTableViewCell
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
+  struct string {
+    /// This `R.string.localizable` struct is generated, and contains static references to 6 localization keys.
+    struct localizable {
+      /// Value: Error occured
+      static let error_occured = Rswift.StringResource(key: "error_occured", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Exchange Rates
+      static let app_title = Rswift.StringResource(key: "app_title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Ok
+      static let ok = Rswift.StringResource(key: "ok", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Server Error
+      static let server_error = Rswift.StringResource(key: "server_error", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Some error occured
+      static let unexpected_error = Rswift.StringResource(key: "unexpected_error", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: There is no internet connection
+      static let no_internet_connection = Rswift.StringResource(key: "no_internet_connection", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+
+      /// Value: Error occured
+      static func error_occured(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("error_occured", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "error_occured"
+        }
+
+        return NSLocalizedString("error_occured", bundle: bundle, comment: "")
+      }
+
+      /// Value: Exchange Rates
+      static func app_title(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("app_title", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "app_title"
+        }
+
+        return NSLocalizedString("app_title", bundle: bundle, comment: "")
+      }
+
+      /// Value: Ok
+      static func ok(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("ok", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "ok"
+        }
+
+        return NSLocalizedString("ok", bundle: bundle, comment: "")
+      }
+
+      /// Value: Server Error
+      static func server_error(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("server_error", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "server_error"
+        }
+
+        return NSLocalizedString("server_error", bundle: bundle, comment: "")
+      }
+
+      /// Value: Some error occured
+      static func unexpected_error(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("unexpected_error", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "unexpected_error"
+        }
+
+        return NSLocalizedString("unexpected_error", bundle: bundle, comment: "")
+      }
+
+      /// Value: There is no internet connection
+      static func no_internet_connection(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("no_internet_connection", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "no_internet_connection"
+        }
+
+        return NSLocalizedString("no_internet_connection", bundle: bundle, comment: "")
+      }
+
+      fileprivate init() {}
     }
 
     fileprivate init() {}
@@ -205,6 +334,17 @@ struct _R: Rswift.Validatable {
 
   #if os(iOS) || os(tvOS)
   struct nib {
+    struct _CurrencyDetailTableViewCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "CurrencyDetailTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CurrencyDetailTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CurrencyDetailTableViewCell
+      }
+
+      fileprivate init() {}
+    }
+
     struct _CurrencyTableViewCell: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "CurrencyTableViewCell"

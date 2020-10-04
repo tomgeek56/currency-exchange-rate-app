@@ -9,7 +9,7 @@
 import UIKit
 
 class ReusableCell: UITableViewCell {
-
+    
     static var identifier: String {
         return String(describing: self)
     }
@@ -17,5 +17,10 @@ class ReusableCell: UITableViewCell {
     static var nib: UINib {
         return UINib(nibName: self.identifier, bundle: nil)
     }
-
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.selectionStyle = .none
+    }
+    
 }

@@ -95,19 +95,29 @@
                                             <constraint firstItem="ogh-jm-r0g" firstAttribute="top" secondItem="wtC-wG-aNZ" secondAttribute="top" id="xJ6-s6-skt"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtK-7k-ekk">
+                                        <rect key="frame" x="0.0" y="88" width="414" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="j5Q-Np-Fml"/>
+                                        </constraints>
+                                    </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ygw-bp-Agx">
-                                        <rect key="frame" x="0.0" y="88" width="414" height="686"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <rect key="frame" x="0.0" y="89" width="414" height="685"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="EtK-7k-ekk" firstAttribute="leading" secondItem="M3m-HI-kuk" secondAttribute="leading" id="2ae-6T-oIp"/>
+                                    <constraint firstAttribute="trailing" secondItem="EtK-7k-ekk" secondAttribute="trailing" id="2uu-JB-OKr"/>
                                     <constraint firstItem="ygw-bp-Agx" firstAttribute="leading" secondItem="M3m-HI-kuk" secondAttribute="leading" id="Baw-O8-A3P"/>
-                                    <constraint firstItem="ygw-bp-Agx" firstAttribute="top" secondItem="wtC-wG-aNZ" secondAttribute="bottom" id="CbY-BH-9sg"/>
+                                    <constraint firstItem="ygw-bp-Agx" firstAttribute="top" secondItem="wtC-wG-aNZ" secondAttribute="bottom" constant="1" id="CbY-BH-9sg"/>
                                     <constraint firstItem="wtC-wG-aNZ" firstAttribute="top" secondItem="M3m-HI-kuk" secondAttribute="topMargin" id="Hhn-Pj-QmR"/>
                                     <constraint firstAttribute="trailing" secondItem="ygw-bp-Agx" secondAttribute="trailing" id="SbZ-u8-a18"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="wtC-wG-aNZ" secondAttribute="trailing" id="U7A-PN-1sd"/>
                                     <constraint firstItem="wtC-wG-aNZ" firstAttribute="leading" secondItem="M3m-HI-kuk" secondAttribute="leadingMargin" id="d86-MX-oam"/>
+                                    <constraint firstItem="EtK-7k-ekk" firstAttribute="top" secondItem="wtC-wG-aNZ" secondAttribute="bottom" id="iB8-sU-7DE"/>
                                     <constraint firstAttribute="bottom" secondItem="ygw-bp-Agx" secondAttribute="bottom" id="rHD-f7-SXG"/>
                                 </constraints>
                             </view>
@@ -127,6 +137,7 @@
                         <outlet property="labelBaseCurrencyDetail" destination="viS-lN-e1J" id="kRN-zC-F8v"/>
                         <outlet property="labelSecondCurrency" destination="cap-Jj-R6b" id="Ym2-0w-Bcq"/>
                         <outlet property="labelSecondCurrencyDetail" destination="9M9-Cm-0Ti" id="nIO-Xn-HyP"/>
+                        <outlet property="tableView" destination="ygw-bp-Agx" id="WeJ-Qo-pTb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xly-ac-8dU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

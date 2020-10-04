@@ -19,7 +19,12 @@ struct CurrencyDetail: Codable {
 extension CurrencyDetail {
     func getResults() -> [CurrencyDetailResult] {
         return self.rates.map { (key, value) -> CurrencyDetailResult in
-            return CurrencyDetailResult(date: key, baseCurrency: base, secondCurrency: Array(value.keys).first!, value: Array(value.values).first!)
+            
+            let firstCurrency = Currency(name: base, value: 1.0)
+            let secondCurrency = Currency(name: Array(value.keys).first!, value: Array(value.values).first!)
+            
+            return CurrencyDetailResult(date: key, baseCurrency: firstCurrency, secondCurrency: secondCurrency)
         }
     }
+
 }
