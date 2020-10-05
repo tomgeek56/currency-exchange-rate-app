@@ -1,0 +1,1492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		230984053C6652DFF510F450F21C5CF7 /* R.swift */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F81301507BDC78889669A641852E3BFE /* Build configuration list for PBXAggregateTarget "R.swift" */;
+			buildPhases = (
+			);
+			dependencies = (
+				4C96BD147A28C219742913509A3A6065 /* PBXTargetDependency */,
+			);
+			name = R.swift;
+		};
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0531D2ECFAED1869832D1960366BF51D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		085E1345CDD6E0200D5F926CF4E4C081 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25A7EFBDB8EB5F2CCA0D3582A712CF /* ReuseIdentifierProtocol.swift */; };
+		09944176280C980EB49784DBCA380462 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 043900C9472BCB7D4D9842CA1F87F504 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A0218B7E7032F88E95372A33D0E59FA /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A0CDC02908C8D111696240A39C7A26 /* StoryboardSegueIdentifierProtocol.swift */; };
+		13461A2FE7D1733253DDAAE91F5133A7 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBA7D6716161F002CC81A8357A562CB /* UICollectionView+ReuseIdentifierProtocol.swift */; };
+		2190C724BFC6EBDB60D55F429C30CA68 /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0324CE9F983D772E812F209FC35322 /* UIImage+ImageResource.swift */; };
+		273C8549B316E7A19B65447D08392FCB /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083F4319EDCD04EC5F7749319943F89D /* UINib+NibResource.swift */; };
+		28F6DC2DB83FA6A599F2731697A093F1 /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE30AC35BE782978EE5855FFF61E5B /* UIViewController+NibResource.swift */; };
+		33CF97469D3F267E887B8320493B195A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		3AE61A1CF118723220585A1DEFE718F7 /* Pods-CurrencyExchangeRateApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D1FF94C0D391CD46770043749A3F52C /* Pods-CurrencyExchangeRateApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FBBE7D96A48168F814B240299CD0CE7 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D668AB4254F10AB567D39658CB4E699 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-dummy.m */; };
+		418F6F68F387AE0ACE8F5CB02B0F0A4C /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC989CBEC0B87C199FE9D9E7F74859B /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
+		5B5D6303E6BD4A611F64D519A76B6849 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56516889A24EAE6362AD37A690B78C6D /* Data+FileResource.swift */; };
+		680AEC5E7C049F327CD07A09642E14CC /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D41B4BC5D654F12CDF085839DEC92 /* FileResource.swift */; };
+		71B273E749EEA83662770BC064B232E4 /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358C4CE828D9EE6EEFB3AAE6A0DA9936 /* UITableView+ReuseIdentifierProtocol.swift */; };
+		773758C3A3C2ADDC4A7CDE5C8267379D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		787C2D5A903E84974D32122E3BC7271F /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3ADDB3328DC95CC0F2809E55A6CF41 /* NibResource.swift */; };
+		78FEB707F4316AB0B6DAC1B0A54782CE /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8267B33B3C4C19727C4A0F64DA1C7D6 /* UIStoryboard+StoryboardResource.swift */; };
+		79BEDA94209ED46FC0DBC6EA1E179B8F /* Pods-CurrencyExchangeRateAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AC47C8365FF3912FC05C414D9A2D9A4 /* Pods-CurrencyExchangeRateAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C6728F02A59EF3FD0B8D5BA464A2E00 /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B19140A6773A9254C7BFACF5C3CB5 /* Bundle+FileResource.swift */; };
+		7D7EBD23329B0DEF17CFC16CC610B187 /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C29EA5A89A34F8842417FE24440D4D84 /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		833F08FCFFEB5655316F591B65BE0745 /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 975AF9CC51BC1E522D7158AB3E676423 /* R.swift.Library-dummy.m */; };
+		89A589D04411197399D7FCF7159AAE0A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */; };
+		8C58EEF353181356477F0633458B0E6D /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD399F20B4FFE0CB6C9F9330B3B2C171 /* StringResource.swift */; };
+		92E3F2111F76E9175C83DDEE68A86FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		994F51846C825E748B9757D9741B6E89 /* Pods-CurrencyExchangeRateApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000BB598A90AF68663C52D225315AD8A /* Pods-CurrencyExchangeRateApp-dummy.m */; };
+		9F2F94EFB17237C6156DA668CB5A151A /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEB8C9ABAB93BF51C632F385B0CA275 /* UIColor+ColorResource.swift */; };
+		A372DEE1A3AFC1D2F84B90AE14EED4BA /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8C09E55941EB379E2E0D14467E4DD2 /* NibResource+UIKit.swift */; };
+		AC96F44279E61358242F26840D4853F0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30114100FB6CB95830EBA5F8C1A347BD /* Reachability.swift */; };
+		AD1FD4609566517C6973D925E621A80B /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CCE2E9F489C92F1BB0C61FDA7FB856 /* StoryboardResource.swift */; };
+		B1E2FA42DF4AC1C67A92CA1E1C060A33 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F76609E6DA07C1C19E5FF422C330E /* UIStoryboard+StoryboardViewControllerResource.swift */; };
+		B2A5CE8CD682CB685687143831B6B240 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6F9C53F1393B8D8122F5D55331C119 /* Validatable.swift */; };
+		B41DF244ABE936F746A29A4B001E50D3 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B0469A1EE5A9E8A1B2D039127645D /* StoryboardResourceWithInitialController+UIKit.swift */; };
+		B5A4512E966A04C9477A257142745DD5 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE6D222DACC7897CB7A8251909E211 /* ImageResource.swift */; };
+		BC943CA2CF08DB3B4D23C7273596624C /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5841621C3593B90B0EFD457C963AD537 /* Identifier.swift */; };
+		C0D53C13155B1FD1C05E0C3DF8A5171A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		DDCCDA0CC4F6901364FFA98C9D878CF0 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CC85D15E14CEBE0C07834D5F11C2E /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
+		E2E23A0BA2E6DECE6B80040989C81C9D /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5986F63F97B6DA4099DBD1C0416132E8 /* FontResource.swift */; };
+		E5938189529B1F8BD074BB166C8BDE57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */; };
+		E5F6ACACDF29D937A21E7DEC85A13E3E /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F854A15868C90CA816F829B4E81B180 /* ReachabilitySwift-dummy.m */; };
+		EDB09FEF14F948C58491AD459C55829C /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CA4DAB0F9B993A360EE93DA6E989 /* UIFont+FontResource.swift */; };
+		EDCFC5B0AD3CA4514BA167968CC3FCE1 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2766431E1A4206A103559C82E7A58BC /* ColorResource.swift */; };
+		EE9C49ECB0513F8E45259AE810731A42 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA7BAEC3E3861CBAFDB7244169B41E /* StoryboardViewControllerResource.swift */; };
+		FBD4274C9837DC361B0F4D435905D69A /* Pods-CurrencyExchangeRateAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C98EFE4CF6AD6469489DC49B712A66 /* Pods-CurrencyExchangeRateAppTests-dummy.m */; };
+		FC9A101EF9891D455D88CC6DF034916B /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB12799CA8A7EF32FB84BF0189FCB9CF /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00D002CA84E719FC36F90D2FB64A13CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B00B2C167CD783351BD1D00BD5AD1F8;
+			remoteInfo = ReachabilitySwift;
+		};
+		16F485479169F444BE391A6D8605F180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 230984053C6652DFF510F450F21C5CF7;
+			remoteInfo = R.swift;
+		};
+		1F0ACA2E2CAC4C39619D3CD6F4CDA62F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B12748D8506CB48696BD90F2CA4F4E38;
+			remoteInfo = R.swift.Library;
+		};
+		3033691C1E49A05084AF82DDFEC1F94E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A1742E4770BABC22FC89178C910E420;
+			remoteInfo = "Pods-CurrencyExchangeRateApp";
+		};
+		48DF2DF93DA8BDF5BA5A9B1953320C62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		7545F8CAAFC9EBCEFC94D10CB61C935C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 230984053C6652DFF510F450F21C5CF7;
+			remoteInfo = R.swift;
+		};
+		BCD48755EA8A1AC8CBC1441BBBCA3E60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		BDD541CD9E64CAA99DA63D117BB9AF10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B12748D8506CB48696BD90F2CA4F4E38;
+			remoteInfo = R.swift.Library;
+		};
+		DA074DCE92097B7D18B1DD7E3D1008BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B00B2C167CD783351BD1D00BD5AD1F8;
+			remoteInfo = ReachabilitySwift;
+		};
+		EA7905F903BCDD850124BDE2A790F9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B12748D8506CB48696BD90F2CA4F4E38;
+			remoteInfo = R.swift.Library;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000BB598A90AF68663C52D225315AD8A /* Pods-CurrencyExchangeRateApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CurrencyExchangeRateApp-dummy.m"; sourceTree = "<group>"; };
+		043900C9472BCB7D4D9842CA1F87F504 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		083F4319EDCD04EC5F7749319943F89D /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
+		11AE30AC35BE782978EE5855FFF61E5B /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
+		18F1903F0EEBAEA5F16BF9A9B6A256B7 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.modulemap"; sourceTree = "<group>"; };
+		19751B9446F73BF184AC83A9DEAD7974 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1E6F9C53F1393B8D8122F5D55331C119 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
+		21B03CA622E690725A6626C088E1D09F /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		239DFCFE1ACA725C1A407402F9D7A221 /* Pods-CurrencyExchangeRateAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CurrencyExchangeRateAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		25C63832E7780CD2D8BFF1889595FA09 /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
+		2D668AB4254F10AB567D39658CB4E699 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-dummy.m"; sourceTree = "<group>"; };
+		2F0D68F74D6BB8265789E186B0540C03 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		30114100FB6CB95830EBA5F8C1A347BD /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/Reachability.swift; sourceTree = "<group>"; };
+		33A0CDC02908C8D111696240A39C7A26 /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
+		351D3474EA0204DEC1160CAD794CB3B5 /* Pods-CurrencyExchangeRateApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CurrencyExchangeRateApp-Info.plist"; sourceTree = "<group>"; };
+		358C4CE828D9EE6EEFB3AAE6A0DA9936 /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		378D41B4BC5D654F12CDF085839DEC92 /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
+		3BFAF7236417F4160E182C8CC01D2C3B /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		3C05AAB236FCA58BCEAF657EBD000455 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		3C0CF3A21332D3701E89006C4C6AD205 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		3E55A145BD2C2B902568770064CAD322 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		40BE6D222DACC7897CB7A8251909E211 /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
+		4C0DDDCBCF0A3FF7C9397948B3889377 /* Pods-CurrencyExchangeRateApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CurrencyExchangeRateApp-frameworks.sh"; sourceTree = "<group>"; };
+		4E6F49616838A1D5E7FA756937F17CEA /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
+		4ED709DF0DBB324B0DCB2E7333077F77 /* Pods-CurrencyExchangeRateApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CurrencyExchangeRateApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		523B0469A1EE5A9E8A1B2D039127645D /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
+		523CC85D15E14CEBE0C07834D5F11C2E /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		56516889A24EAE6362AD37A690B78C6D /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
+		5841621C3593B90B0EFD457C963AD537 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
+		5858584CC64738DFE08221C07146E341 /* R.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.xcconfig; sourceTree = "<group>"; };
+		5986F63F97B6DA4099DBD1C0416132E8 /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
+		5D9E1E3ED0B5FF6A069499EB14383965 /* Pods-CurrencyExchangeRateAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CurrencyExchangeRateAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		657EC3FACEE89C1BC926B6377798009E /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		67DA7BAEC3E3861CBAFDB7244169B41E /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
+		6A25A7EFBDB8EB5F2CCA0D3582A712CF /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		6AC47C8365FF3912FC05C414D9A2D9A4 /* Pods-CurrencyExchangeRateAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CurrencyExchangeRateAppTests-umbrella.h"; sourceTree = "<group>"; };
+		6BF3FBC719636BEAB95992C016234B90 /* Pods-CurrencyExchangeRateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CurrencyExchangeRateApp.debug.xcconfig"; sourceTree = "<group>"; };
+		72CCE2E9F489C92F1BB0C61FDA7FB856 /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
+		756CFCE0025F1D3002AA698C9F4281A8 /* Pods-CurrencyExchangeRateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CurrencyExchangeRateApp.release.xcconfig"; sourceTree = "<group>"; };
+		78C98EFE4CF6AD6469489DC49B712A66 /* Pods-CurrencyExchangeRateAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CurrencyExchangeRateAppTests-dummy.m"; sourceTree = "<group>"; };
+		7D1FF94C0D391CD46770043749A3F52C /* Pods-CurrencyExchangeRateApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CurrencyExchangeRateApp-umbrella.h"; sourceTree = "<group>"; };
+		8A382E4B360F97D828E7449E6FFE1128 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-Info.plist"; sourceTree = "<group>"; };
+		8AC989CBEC0B87C199FE9D9E7F74859B /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
+		8F0324CE9F983D772E812F209FC35322 /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
+		8F854A15868C90CA816F829B4E81B180 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		9115D91D73FEAD4BF26DEF2CEB74136E /* ReachabilitySwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReachabilitySwift-Info.plist"; sourceTree = "<group>"; };
+		975AF9CC51BC1E522D7158AB3E676423 /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EEB8C9ABAB93BF51C632F385B0CA275 /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
+		A0D26A75E57145419F6FA656D6FB7D23 /* Pods_CurrencyExchangeRateAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CurrencyExchangeRateAppTests.framework; path = "Pods-CurrencyExchangeRateAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1745E41335917C5394FA455E3DB729A /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
+		A19DD827CC659BFE66A3C69B7696282A /* Pods_CurrencyExchangeRateApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CurrencyExchangeRateApp.framework; path = "Pods-CurrencyExchangeRateApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8C09E55941EB379E2E0D14467E4DD2 /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
+		AEDADF3514AB0741B9D0ACA3B376DE19 /* Pods-CurrencyExchangeRateAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CurrencyExchangeRateAppTests.modulemap"; sourceTree = "<group>"; };
+		B0695410A61AEBEFEF94D4DFBD8C699E /* Pods_CurrencyExchangeRateApp_CurrencyExchangeRateAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CurrencyExchangeRateApp_CurrencyExchangeRateAppUITests.framework; path = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B3E66A6946344CA96C0C268F7B260E /* Pods-CurrencyExchangeRateApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CurrencyExchangeRateApp.modulemap"; sourceTree = "<group>"; };
+		BDBA7D6716161F002CC81A8357A562CB /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		BE3ADDB3328DC95CC0F2809E55A6CF41 /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
+		C0F9DF829239B43C401871875597F9E7 /* R.swift.Library-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "R.swift.Library-Info.plist"; sourceTree = "<group>"; };
+		C29EA5A89A34F8842417FE24440D4D84 /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
+		C76F76609E6DA07C1C19E5FF422C330E /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
+		C7BC82B394D0DE641A9D92F01DA496BC /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C97DFF15C7F5B899052DC3D464192A90 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
+		CA4E3B66CE4D02048C77392B64FD0ABB /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rswift.framework; path = R.swift.Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB12799CA8A7EF32FB84BF0189FCB9CF /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		CC7160AF3B015DAD0AD8E5769A6246EE /* Pods-CurrencyExchangeRateAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CurrencyExchangeRateAppTests-Info.plist"; sourceTree = "<group>"; };
+		CCFCC121935A54E4C1D501A6CBA79D07 /* Pods-CurrencyExchangeRateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CurrencyExchangeRateAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DA9B19140A6773A9254C7BFACF5C3CB5 /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
+		DD399F20B4FFE0CB6C9F9330B3B2C171 /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
+		E13AD1661E63BACDA7A211E26936B571 /* Pods-CurrencyExchangeRateAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CurrencyExchangeRateAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2766431E1A4206A103559C82E7A58BC /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
+		E8267B33B3C4C19727C4A0F64DA1C7D6 /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
+		F18EDDE16BFB64F373F5DB561C8B890F /* Pods-CurrencyExchangeRateApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CurrencyExchangeRateApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		FAB2CA4DAB0F9B993A360EE93DA6E989 /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15556879DC33059F7E5EB97663AD2295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0D53C13155B1FD1C05E0C3DF8A5171A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B8708BE04461C00745AD161B8933E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E3F2111F76E9175C83DDEE68A86FCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30DDF4B40C454C038371AE37121BF17A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0531D2ECFAED1869832D1960366BF51D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		692C69BBDB93F0B2516EBC51D3774A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773758C3A3C2ADDC4A7CDE5C8267379D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A37A51219ED31062DE51A3E139BF37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89A589D04411197399D7FCF7159AAE0A /* CoreTelephony.framework in Frameworks */,
+				33CF97469D3F267E887B8320493B195A /* Foundation.framework in Frameworks */,
+				E5938189529B1F8BD074BB166C8BDE57 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65C892BC3ADB577FE47BB0D4B61FE2E0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		299C68BC830AA0009C50A425809961AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A19DD827CC659BFE66A3C69B7696282A /* Pods_CurrencyExchangeRateApp.framework */,
+				B0695410A61AEBEFEF94D4DFBD8C699E /* Pods_CurrencyExchangeRateApp_CurrencyExchangeRateAppUITests.framework */,
+				A0D26A75E57145419F6FA656D6FB7D23 /* Pods_CurrencyExchangeRateAppTests.framework */,
+				21B03CA622E690725A6626C088E1D09F /* Reachability.framework */,
+				CA4E3B66CE4D02048C77392B64FD0ABB /* Rswift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D313C7EABAAA55D94DBD6FD399627E1 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				30114100FB6CB95830EBA5F8C1A347BD /* Reachability.swift */,
+				A7B75CAD644B5057634B4F56BCB4F35A /* Support Files */,
+			);
+			name = ReachabilitySwift;
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		3D4D31B22B3A18058B15A7DB4CA4F84F /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				E2450FBE607D30D4BFA52E33F15D4D44 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		42BFE8543C658F15ED053F303B395167 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18F1903F0EEBAEA5F16BF9A9B6A256B7 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.modulemap */,
+				19751B9446F73BF184AC83A9DEAD7974 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-acknowledgements.markdown */,
+				3E55A145BD2C2B902568770064CAD322 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-acknowledgements.plist */,
+				2D668AB4254F10AB567D39658CB4E699 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-dummy.m */,
+				C7BC82B394D0DE641A9D92F01DA496BC /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-frameworks.sh */,
+				8A382E4B360F97D828E7449E6FFE1128 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-Info.plist */,
+				CB12799CA8A7EF32FB84BF0189FCB9CF /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-umbrella.h */,
+				2F0D68F74D6BB8265789E186B0540C03 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.debug.xcconfig */,
+				657EC3FACEE89C1BC926B6377798009E /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.release.xcconfig */,
+			);
+			name = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests";
+			path = "Target Support Files/Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests";
+			sourceTree = "<group>";
+		};
+		456EF8EB452D9F7A08E13BE00266204C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				25C63832E7780CD2D8BFF1889595FA09 /* R.swift.Library.modulemap */,
+				A1745E41335917C5394FA455E3DB729A /* R.swift.Library.xcconfig */,
+				975AF9CC51BC1E522D7158AB3E676423 /* R.swift.Library-dummy.m */,
+				C0F9DF829239B43C401871875597F9E7 /* R.swift.Library-Info.plist */,
+				4E6F49616838A1D5E7FA756937F17CEA /* R.swift.Library-prefix.pch */,
+				C29EA5A89A34F8842417FE24440D4D84 /* R.swift.Library-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/R.swift.Library";
+			sourceTree = "<group>";
+		};
+		65C892BC3ADB577FE47BB0D4B61FE2E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */,
+				D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */,
+				F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6AFA4E048C480AF17FBD270FC9B99EB8 /* R.swift */ = {
+			isa = PBXGroup;
+			children = (
+				F5796CFD43A2F27041048F9E73DBA7EE /* Support Files */,
+			);
+			name = R.swift;
+			path = R.swift;
+			sourceTree = "<group>";
+		};
+		7869BFBA616B00C2CB0F3F75890D4C03 /* Pods-CurrencyExchangeRateAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEDADF3514AB0741B9D0ACA3B376DE19 /* Pods-CurrencyExchangeRateAppTests.modulemap */,
+				E13AD1661E63BACDA7A211E26936B571 /* Pods-CurrencyExchangeRateAppTests-acknowledgements.markdown */,
+				239DFCFE1ACA725C1A407402F9D7A221 /* Pods-CurrencyExchangeRateAppTests-acknowledgements.plist */,
+				78C98EFE4CF6AD6469489DC49B712A66 /* Pods-CurrencyExchangeRateAppTests-dummy.m */,
+				CC7160AF3B015DAD0AD8E5769A6246EE /* Pods-CurrencyExchangeRateAppTests-Info.plist */,
+				6AC47C8365FF3912FC05C414D9A2D9A4 /* Pods-CurrencyExchangeRateAppTests-umbrella.h */,
+				5D9E1E3ED0B5FF6A069499EB14383965 /* Pods-CurrencyExchangeRateAppTests.debug.xcconfig */,
+				CCFCC121935A54E4C1D501A6CBA79D07 /* Pods-CurrencyExchangeRateAppTests.release.xcconfig */,
+			);
+			name = "Pods-CurrencyExchangeRateAppTests";
+			path = "Target Support Files/Pods-CurrencyExchangeRateAppTests";
+			sourceTree = "<group>";
+		};
+		7F39FA00564495AD74A5AE52CEF5FB4C /* R.swift.Library */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B19140A6773A9254C7BFACF5C3CB5 /* Bundle+FileResource.swift */,
+				E2766431E1A4206A103559C82E7A58BC /* ColorResource.swift */,
+				56516889A24EAE6362AD37A690B78C6D /* Data+FileResource.swift */,
+				378D41B4BC5D654F12CDF085839DEC92 /* FileResource.swift */,
+				5986F63F97B6DA4099DBD1C0416132E8 /* FontResource.swift */,
+				5841621C3593B90B0EFD457C963AD537 /* Identifier.swift */,
+				40BE6D222DACC7897CB7A8251909E211 /* ImageResource.swift */,
+				BE3ADDB3328DC95CC0F2809E55A6CF41 /* NibResource.swift */,
+				AC8C09E55941EB379E2E0D14467E4DD2 /* NibResource+UIKit.swift */,
+				6A25A7EFBDB8EB5F2CCA0D3582A712CF /* ReuseIdentifierProtocol.swift */,
+				72CCE2E9F489C92F1BB0C61FDA7FB856 /* StoryboardResource.swift */,
+				523B0469A1EE5A9E8A1B2D039127645D /* StoryboardResourceWithInitialController+UIKit.swift */,
+				33A0CDC02908C8D111696240A39C7A26 /* StoryboardSegueIdentifierProtocol.swift */,
+				67DA7BAEC3E3861CBAFDB7244169B41E /* StoryboardViewControllerResource.swift */,
+				DD399F20B4FFE0CB6C9F9330B3B2C171 /* StringResource.swift */,
+				8AC989CBEC0B87C199FE9D9E7F74859B /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
+				BDBA7D6716161F002CC81A8357A562CB /* UICollectionView+ReuseIdentifierProtocol.swift */,
+				9EEB8C9ABAB93BF51C632F385B0CA275 /* UIColor+ColorResource.swift */,
+				FAB2CA4DAB0F9B993A360EE93DA6E989 /* UIFont+FontResource.swift */,
+				8F0324CE9F983D772E812F209FC35322 /* UIImage+ImageResource.swift */,
+				083F4319EDCD04EC5F7749319943F89D /* UINib+NibResource.swift */,
+				E8267B33B3C4C19727C4A0F64DA1C7D6 /* UIStoryboard+StoryboardResource.swift */,
+				C76F76609E6DA07C1C19E5FF422C330E /* UIStoryboard+StoryboardViewControllerResource.swift */,
+				358C4CE828D9EE6EEFB3AAE6A0DA9936 /* UITableView+ReuseIdentifierProtocol.swift */,
+				11AE30AC35BE782978EE5855FFF61E5B /* UIViewController+NibResource.swift */,
+				523CC85D15E14CEBE0C07834D5F11C2E /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
+				1E6F9C53F1393B8D8122F5D55331C119 /* Validatable.swift */,
+				456EF8EB452D9F7A08E13BE00266204C /* Support Files */,
+			);
+			name = R.swift.Library;
+			path = R.swift.Library;
+			sourceTree = "<group>";
+		};
+		8D99B9B0E2D7F58DA05F6284CA5F3458 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AFA4E048C480AF17FBD270FC9B99EB8 /* R.swift */,
+				7F39FA00564495AD74A5AE52CEF5FB4C /* R.swift.Library */,
+				3D313C7EABAAA55D94DBD6FD399627E1 /* ReachabilitySwift */,
+				3D4D31B22B3A18058B15A7DB4CA4F84F /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A7B75CAD644B5057634B4F56BCB4F35A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAF7236417F4160E182C8CC01D2C3B /* ReachabilitySwift.modulemap */,
+				3C05AAB236FCA58BCEAF657EBD000455 /* ReachabilitySwift.xcconfig */,
+				8F854A15868C90CA816F829B4E81B180 /* ReachabilitySwift-dummy.m */,
+				9115D91D73FEAD4BF26DEF2CEB74136E /* ReachabilitySwift-Info.plist */,
+				3C0CF3A21332D3701E89006C4C6AD205 /* ReachabilitySwift-prefix.pch */,
+				043900C9472BCB7D4D9842CA1F87F504 /* ReachabilitySwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				8D99B9B0E2D7F58DA05F6284CA5F3458 /* Pods */,
+				299C68BC830AA0009C50A425809961AF /* Products */,
+				ED240BDDBC759AC26EAEAFE9190F94D6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2450FBE607D30D4BFA52E33F15D4D44 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C97DFF15C7F5B899052DC3D464192A90 /* SwiftLint.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		E9A577CB33079C9729167A4DA548EEBE /* Pods-CurrencyExchangeRateApp */ = {
+			isa = PBXGroup;
+			children = (
+				B3B3E66A6946344CA96C0C268F7B260E /* Pods-CurrencyExchangeRateApp.modulemap */,
+				F18EDDE16BFB64F373F5DB561C8B890F /* Pods-CurrencyExchangeRateApp-acknowledgements.markdown */,
+				4ED709DF0DBB324B0DCB2E7333077F77 /* Pods-CurrencyExchangeRateApp-acknowledgements.plist */,
+				000BB598A90AF68663C52D225315AD8A /* Pods-CurrencyExchangeRateApp-dummy.m */,
+				4C0DDDCBCF0A3FF7C9397948B3889377 /* Pods-CurrencyExchangeRateApp-frameworks.sh */,
+				351D3474EA0204DEC1160CAD794CB3B5 /* Pods-CurrencyExchangeRateApp-Info.plist */,
+				7D1FF94C0D391CD46770043749A3F52C /* Pods-CurrencyExchangeRateApp-umbrella.h */,
+				6BF3FBC719636BEAB95992C016234B90 /* Pods-CurrencyExchangeRateApp.debug.xcconfig */,
+				756CFCE0025F1D3002AA698C9F4281A8 /* Pods-CurrencyExchangeRateApp.release.xcconfig */,
+			);
+			name = "Pods-CurrencyExchangeRateApp";
+			path = "Target Support Files/Pods-CurrencyExchangeRateApp";
+			sourceTree = "<group>";
+		};
+		ED240BDDBC759AC26EAEAFE9190F94D6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9A577CB33079C9729167A4DA548EEBE /* Pods-CurrencyExchangeRateApp */,
+				42BFE8543C658F15ED053F303B395167 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests */,
+				7869BFBA616B00C2CB0F3F75890D4C03 /* Pods-CurrencyExchangeRateAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F5796CFD43A2F27041048F9E73DBA7EE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5858584CC64738DFE08221C07146E341 /* R.swift.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/R.swift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09F7B7D04C454C16C0015640CF269F7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09944176280C980EB49784DBCA380462 /* ReachabilitySwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1545BBAFF2CCDDC38D14647516020C9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BEDA94209ED46FC0DBC6EA1E179B8F /* Pods-CurrencyExchangeRateAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB595192015716F9D040256C5D0ECF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9A101EF9891D455D88CC6DF034916B /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E61F26C7F7BBE0385144382F665E4A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE61A1CF118723220585A1DEFE718F7 /* Pods-CurrencyExchangeRateApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2F104A86F2AE5EDBD3E682F8835F18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7EBD23329B0DEF17CFC16CC610B187 /* R.swift.Library-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50A4613BA081C4F47DEEC1F9B9176BA /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
+			buildPhases = (
+				09F7B7D04C454C16C0015640CF269F7E /* Headers */,
+				9C9FF78F6878BCE13B73B6BB5DD0A609 /* Sources */,
+				92A37A51219ED31062DE51A3E139BF37 /* Frameworks */,
+				1EA4E360633A1D5CC11F6E9C4EEC2475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReachabilitySwift;
+			productName = ReachabilitySwift;
+			productReference = 21B03CA622E690725A6626C088E1D09F /* Reachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2A1742E4770BABC22FC89178C910E420 /* Pods-CurrencyExchangeRateApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C598191801346A089C8308595D35F56B /* Build configuration list for PBXNativeTarget "Pods-CurrencyExchangeRateApp" */;
+			buildPhases = (
+				8E61F26C7F7BBE0385144382F665E4A1 /* Headers */,
+				41B73B93A0A21125A4635E6AFA8A7026 /* Sources */,
+				1B8708BE04461C00745AD161B8933E22 /* Frameworks */,
+				0B920090213364DFBB73DB3D71C6A96E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				031D72156289F88A8D14A080BCCEF2E5 /* PBXTargetDependency */,
+				8FBFCB442E43EE8ACEBFB7F7337FC9C0 /* PBXTargetDependency */,
+				BF2F737F59FB95A9EE30379CFDC676BB /* PBXTargetDependency */,
+				B6AB6A098AB840A604012F2CFC22B130 /* PBXTargetDependency */,
+			);
+			name = "Pods-CurrencyExchangeRateApp";
+			productName = "Pods-CurrencyExchangeRateApp";
+			productReference = A19DD827CC659BFE66A3C69B7696282A /* Pods_CurrencyExchangeRateApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		445C3B8A013987ACCBF6F8A64E47495E /* Pods-CurrencyExchangeRateAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45AFA2C94C37FA5C34E8A9ADD41E8EF9 /* Build configuration list for PBXNativeTarget "Pods-CurrencyExchangeRateAppTests" */;
+			buildPhases = (
+				1545BBAFF2CCDDC38D14647516020C9B /* Headers */,
+				BD75C3E6389C83814D0DB5D3E86CA8A6 /* Sources */,
+				15556879DC33059F7E5EB97663AD2295 /* Frameworks */,
+				9FF5FF5E1F33BB2FD6D44C8766B90BFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA300EF355FF2442377628DA5123094B /* PBXTargetDependency */,
+			);
+			name = "Pods-CurrencyExchangeRateAppTests";
+			productName = "Pods-CurrencyExchangeRateAppTests";
+			productReference = A0D26A75E57145419F6FA656D6FB7D23 /* Pods_CurrencyExchangeRateAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B366353B63A2FFB3391439B969B5786 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54DC7513FB5725B7DAC7590AC91ECF0 /* Build configuration list for PBXNativeTarget "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests" */;
+			buildPhases = (
+				36CB595192015716F9D040256C5D0ECF /* Headers */,
+				C4236AC9B71362FD4DC235717EE35101 /* Sources */,
+				692C69BBDB93F0B2516EBC51D3774A7B /* Frameworks */,
+				7F5ECB6D8923059F6E08A53B0C31E7C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8EFE7A8AF422E021D1E2A8A8F7378E4 /* PBXTargetDependency */,
+				C6D6323DE6E8BAA9875A0C12737ADED2 /* PBXTargetDependency */,
+				1D181984A003138C88448D6530149C9E /* PBXTargetDependency */,
+				9E6DB1F7F4B864D939A24781668FEABD /* PBXTargetDependency */,
+			);
+			name = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests";
+			productName = "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests";
+			productReference = B0695410A61AEBEFEF94D4DFBD8C699E /* Pods_CurrencyExchangeRateApp_CurrencyExchangeRateAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D966A6E3B737E009252B4616EF68E0D /* Build configuration list for PBXNativeTarget "R.swift.Library" */;
+			buildPhases = (
+				FD2F104A86F2AE5EDBD3E682F8835F18 /* Headers */,
+				9F52BBE74F215CD219C080FE067D6C68 /* Sources */,
+				30DDF4B40C454C038371AE37121BF17A /* Frameworks */,
+				A7A1ABBCE9E4DF448D56127C415A5854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = R.swift.Library;
+			productName = R.swift.Library;
+			productReference = CA4E3B66CE4D02048C77392B64FD0ABB /* Rswift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 299C68BC830AA0009C50A425809961AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A1742E4770BABC22FC89178C910E420 /* Pods-CurrencyExchangeRateApp */,
+				9B366353B63A2FFB3391439B969B5786 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests */,
+				445C3B8A013987ACCBF6F8A64E47495E /* Pods-CurrencyExchangeRateAppTests */,
+				230984053C6652DFF510F450F21C5CF7 /* R.swift */,
+				B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */,
+				0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B920090213364DFBB73DB3D71C6A96E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA4E360633A1D5CC11F6E9C4EEC2475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5ECB6D8923059F6E08A53B0C31E7C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FF5FF5E1F33BB2FD6D44C8766B90BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A1ABBCE9E4DF448D56127C415A5854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41B73B93A0A21125A4635E6AFA8A7026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994F51846C825E748B9757D9741B6E89 /* Pods-CurrencyExchangeRateApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C9FF78F6878BCE13B73B6BB5DD0A609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC96F44279E61358242F26840D4853F0 /* Reachability.swift in Sources */,
+				E5F6ACACDF29D937A21E7DEC85A13E3E /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F52BBE74F215CD219C080FE067D6C68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6728F02A59EF3FD0B8D5BA464A2E00 /* Bundle+FileResource.swift in Sources */,
+				EDCFC5B0AD3CA4514BA167968CC3FCE1 /* ColorResource.swift in Sources */,
+				5B5D6303E6BD4A611F64D519A76B6849 /* Data+FileResource.swift in Sources */,
+				680AEC5E7C049F327CD07A09642E14CC /* FileResource.swift in Sources */,
+				E2E23A0BA2E6DECE6B80040989C81C9D /* FontResource.swift in Sources */,
+				BC943CA2CF08DB3B4D23C7273596624C /* Identifier.swift in Sources */,
+				B5A4512E966A04C9477A257142745DD5 /* ImageResource.swift in Sources */,
+				A372DEE1A3AFC1D2F84B90AE14EED4BA /* NibResource+UIKit.swift in Sources */,
+				787C2D5A903E84974D32122E3BC7271F /* NibResource.swift in Sources */,
+				833F08FCFFEB5655316F591B65BE0745 /* R.swift.Library-dummy.m in Sources */,
+				085E1345CDD6E0200D5F926CF4E4C081 /* ReuseIdentifierProtocol.swift in Sources */,
+				AD1FD4609566517C6973D925E621A80B /* StoryboardResource.swift in Sources */,
+				B41DF244ABE936F746A29A4B001E50D3 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */,
+				0A0218B7E7032F88E95372A33D0E59FA /* StoryboardSegueIdentifierProtocol.swift in Sources */,
+				EE9C49ECB0513F8E45259AE810731A42 /* StoryboardViewControllerResource.swift in Sources */,
+				8C58EEF353181356477F0633458B0E6D /* StringResource.swift in Sources */,
+				418F6F68F387AE0ACE8F5CB02B0F0A4C /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */,
+				13461A2FE7D1733253DDAAE91F5133A7 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */,
+				9F2F94EFB17237C6156DA668CB5A151A /* UIColor+ColorResource.swift in Sources */,
+				EDB09FEF14F948C58491AD459C55829C /* UIFont+FontResource.swift in Sources */,
+				2190C724BFC6EBDB60D55F429C30CA68 /* UIImage+ImageResource.swift in Sources */,
+				273C8549B316E7A19B65447D08392FCB /* UINib+NibResource.swift in Sources */,
+				78FEB707F4316AB0B6DAC1B0A54782CE /* UIStoryboard+StoryboardResource.swift in Sources */,
+				B1E2FA42DF4AC1C67A92CA1E1C060A33 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */,
+				71B273E749EEA83662770BC064B232E4 /* UITableView+ReuseIdentifierProtocol.swift in Sources */,
+				28F6DC2DB83FA6A599F2731697A093F1 /* UIViewController+NibResource.swift in Sources */,
+				DDCCDA0CC4F6901364FFA98C9D878CF0 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */,
+				B2A5CE8CD682CB685687143831B6B240 /* Validatable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD75C3E6389C83814D0DB5D3E86CA8A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD4274C9837DC361B0F4D435905D69A /* Pods-CurrencyExchangeRateAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4236AC9B71362FD4DC235717EE35101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBBE7D96A48168F814B240299CD0CE7 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		031D72156289F88A8D14A080BCCEF2E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift;
+			target = 230984053C6652DFF510F450F21C5CF7 /* R.swift */;
+			targetProxy = 16F485479169F444BE391A6D8605F180 /* PBXContainerItemProxy */;
+		};
+		1D181984A003138C88448D6530149C9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */;
+			targetProxy = 00D002CA84E719FC36F90D2FB64A13CC /* PBXContainerItemProxy */;
+		};
+		4C96BD147A28C219742913509A3A6065 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift.Library;
+			target = B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */;
+			targetProxy = 1F0ACA2E2CAC4C39619D3CD6F4CDA62F /* PBXContainerItemProxy */;
+		};
+		8FBFCB442E43EE8ACEBFB7F7337FC9C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift.Library;
+			target = B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */;
+			targetProxy = EA7905F903BCDD850124BDE2A790F9C9 /* PBXContainerItemProxy */;
+		};
+		9E6DB1F7F4B864D939A24781668FEABD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 48DF2DF93DA8BDF5BA5A9B1953320C62 /* PBXContainerItemProxy */;
+		};
+		B6AB6A098AB840A604012F2CFC22B130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = BCD48755EA8A1AC8CBC1441BBBCA3E60 /* PBXContainerItemProxy */;
+		};
+		B8EFE7A8AF422E021D1E2A8A8F7378E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift;
+			target = 230984053C6652DFF510F450F21C5CF7 /* R.swift */;
+			targetProxy = 7545F8CAAFC9EBCEFC94D10CB61C935C /* PBXContainerItemProxy */;
+		};
+		BF2F737F59FB95A9EE30379CFDC676BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */;
+			targetProxy = DA074DCE92097B7D18B1DD7E3D1008BA /* PBXContainerItemProxy */;
+		};
+		C6D6323DE6E8BAA9875A0C12737ADED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift.Library;
+			target = B12748D8506CB48696BD90F2CA4F4E38 /* R.swift.Library */;
+			targetProxy = BDD541CD9E64CAA99DA63D117BB9AF10 /* PBXContainerItemProxy */;
+		};
+		DA300EF355FF2442377628DA5123094B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CurrencyExchangeRateApp";
+			target = 2A1742E4770BABC22FC89178C910E420 /* Pods-CurrencyExchangeRateApp */;
+			targetProxy = 3033691C1E49A05084AF82DDFEC1F94E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1DDE2AE37418905C8A07CF9D5AD78F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1745E41335917C5394FA455E3DB729A /* R.swift.Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift.Library/R.swift.Library-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
+				PRODUCT_MODULE_NAME = Rswift;
+				PRODUCT_NAME = Rswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		280953B2C329B1538FA170D526C7D5D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5858584CC64738DFE08221C07146E341 /* R.swift.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E5CC1CB7D314F3379FA0E57EC245814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 756CFCE0025F1D3002AA698C9F4281A8 /* Pods-CurrencyExchangeRateApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CurrencyExchangeRateApp/Pods-CurrencyExchangeRateApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CurrencyExchangeRateApp/Pods-CurrencyExchangeRateApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		398726D960DCA44CB9C7D5866A06AEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5858584CC64738DFE08221C07146E341 /* R.swift.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4760060F3ED2E118A4DFB50F348DC0A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1745E41335917C5394FA455E3DB729A /* R.swift.Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift.Library/R.swift.Library-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
+				PRODUCT_MODULE_NAME = Rswift;
+				PRODUCT_NAME = Rswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7AB2E85B7E9CFB03E42027D47FFE869B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFCC121935A54E4C1D501A6CBA79D07 /* Pods-CurrencyExchangeRateAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CurrencyExchangeRateAppTests/Pods-CurrencyExchangeRateAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CurrencyExchangeRateAppTests/Pods-CurrencyExchangeRateAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8263972795E95891B201A5070FE7A0B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D9E1E3ED0B5FF6A069499EB14383965 /* Pods-CurrencyExchangeRateAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CurrencyExchangeRateAppTests/Pods-CurrencyExchangeRateAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CurrencyExchangeRateAppTests/Pods-CurrencyExchangeRateAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84D7C4574E8F0F3095623F0E06F5B402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C97DFF15C7F5B899052DC3D464192A90 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		871B6E28ABA34DAE69824AB9D22D3B7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8ABE99E4B3EC6F8A9CB0759CC84B84E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BF3FBC719636BEAB95992C016234B90 /* Pods-CurrencyExchangeRateApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CurrencyExchangeRateApp/Pods-CurrencyExchangeRateApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CurrencyExchangeRateApp/Pods-CurrencyExchangeRateApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D9C5DF25380D913350BDCA225353A58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C05AAB236FCA58BCEAF657EBD000455 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		99995D75636F29DFED80459A4D72DAFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 657EC3FACEE89C1BC926B6377798009E /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests/Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests/Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C769BE851B07CA856A71E95078699B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F0D68F74D6BB8265789E186B0540C03 /* Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests/Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests/Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D4A7F9E3FE3B37118A6FCEBE7DA678CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C05AAB236FCA58BCEAF657EBD000455 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DEED47E09AF743F48544C1C4FEADEF47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C97DFF15C7F5B899052DC3D464192A90 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D966A6E3B737E009252B4616EF68E0D /* Build configuration list for PBXNativeTarget "R.swift.Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4760060F3ED2E118A4DFB50F348DC0A1 /* Debug */,
+				1DDE2AE37418905C8A07CF9D5AD78F28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45AFA2C94C37FA5C34E8A9ADD41E8EF9 /* Build configuration list for PBXNativeTarget "Pods-CurrencyExchangeRateAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8263972795E95891B201A5070FE7A0B7 /* Debug */,
+				7AB2E85B7E9CFB03E42027D47FFE869B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */,
+				871B6E28ABA34DAE69824AB9D22D3B7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEED47E09AF743F48544C1C4FEADEF47 /* Debug */,
+				84D7C4574E8F0F3095623F0E06F5B402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54DC7513FB5725B7DAC7590AC91ECF0 /* Build configuration list for PBXNativeTarget "Pods-CurrencyExchangeRateApp-CurrencyExchangeRateAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C769BE851B07CA856A71E95078699B8E /* Debug */,
+				99995D75636F29DFED80459A4D72DAFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C598191801346A089C8308595D35F56B /* Build configuration list for PBXNativeTarget "Pods-CurrencyExchangeRateApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ABE99E4B3EC6F8A9CB0759CC84B84E7 /* Debug */,
+				2E5CC1CB7D314F3379FA0E57EC245814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50A4613BA081C4F47DEEC1F9B9176BA /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A7F9E3FE3B37118A6FCEBE7DA678CF /* Debug */,
+				8D9C5DF25380D913350BDCA225353A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F81301507BDC78889669A641852E3BFE /* Build configuration list for PBXAggregateTarget "R.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				398726D960DCA44CB9C7D5866A06AEDB /* Debug */,
+				280953B2C329B1538FA170D526C7D5D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

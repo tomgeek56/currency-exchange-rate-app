@@ -1,0 +1,28 @@
+PODS:
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+  - ReachabilitySwift (5.0.0)
+  - SwiftLint (0.40.3)
+
+DEPENDENCIES:
+  - R.swift
+  - ReachabilitySwift (= 5.0.0)
+  - SwiftLint (= 0.40.3)
+
+SPEC REPOS:
+  trunk:
+    - R.swift
+    - R.swift.Library
+    - ReachabilitySwift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
+
+PODFILE CHECKSUM: d451d766d1550090631085107c25392b8acc65ba
+
+COCOAPODS: 1.8.4
