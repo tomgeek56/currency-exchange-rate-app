@@ -22,16 +22,16 @@
                                         <rect key="frame" x="8" y="8" width="398" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogh-jm-r0g">
-                                                <rect key="frame" x="0.0" y="0.0" width="158.5" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="169" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPb-Ui-QMf">
-                                                        <rect key="frame" x="16" y="16" width="126.5" height="21"/>
+                                                        <rect key="frame" x="16" y="16" width="137" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viS-lN-e1J">
-                                                        <rect key="frame" x="64" y="45" width="31" height="14.5"/>
+                                                        <rect key="frame" x="69" y="45" width="31" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -47,23 +47,34 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrH-V8-Ews">
-                                                <rect key="frame" x="158.5" y="0.0" width="81" height="72"/>
+                                                <rect key="frame" x="169" y="0.0" width="60" height="72"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-forward-button-50" translatesAutoresizingMaskIntoConstraints="NO" id="gJy-Rq-nUm">
+                                                        <rect key="frame" x="10" y="0.0" width="40" height="72"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="3K6-Wn-kbg"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="81" id="kDI-b2-kdd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gJy-Rq-nUm" secondAttribute="bottom" id="Gg7-M4-Thj"/>
+                                                    <constraint firstItem="gJy-Rq-nUm" firstAttribute="top" secondItem="yrH-V8-Ews" secondAttribute="top" id="bxR-d6-Nkf"/>
+                                                    <constraint firstItem="gJy-Rq-nUm" firstAttribute="centerX" secondItem="yrH-V8-Ews" secondAttribute="centerX" id="iZ5-62-BHs"/>
+                                                    <constraint firstAttribute="width" constant="60" id="kDI-b2-kdd"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmq-Z5-oAb">
-                                                <rect key="frame" x="239.5" y="0.0" width="158.5" height="72"/>
+                                                <rect key="frame" x="229" y="0.0" width="169" height="72"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9M9-Cm-0Ti">
-                                                        <rect key="frame" x="64" y="45.5" width="31" height="14.5"/>
+                                                        <rect key="frame" x="69" y="45.5" width="31" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cap-Jj-R6b">
-                                                        <rect key="frame" x="16" y="16" width="126.5" height="21.5"/>
+                                                        <rect key="frame" x="16" y="16" width="137" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -145,4 +156,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-forward-button-50" width="25" height="25"/>
+    </resources>
 </document>

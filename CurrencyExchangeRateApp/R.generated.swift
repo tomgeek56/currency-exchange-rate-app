@@ -146,6 +146,21 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.image` struct is generated, and contains static references to 1 images.
+  struct image {
+    /// Image `icons8-forward-button-50`.
+    static let icons8ForwardButton50 = Rswift.ImageResource(bundle: R.hostingBundle, name: "icons8-forward-button-50")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icons8-forward-button-50", bundle: ..., traitCollection: ...)`
+    static func icons8ForwardButton50(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.icons8ForwardButton50, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
   /// This `R.info` struct is generated, and contains static references to 1 properties.
   struct info {
     struct uiApplicationSceneManifest {
@@ -401,6 +416,7 @@ struct _R: Rswift.Validatable {
       let name = "CurrencyDetail"
 
       static func validate() throws {
+        if UIKit.UIImage(named: "icons8-forward-button-50", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'icons8-forward-button-50' is used in storyboard 'CurrencyDetail', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }

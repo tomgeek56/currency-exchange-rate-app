@@ -8,13 +8,17 @@
 
 import UIKit
 
-struct CurrencyListViewModel {
+class CurrencyListViewModel {
     
     var currencies: Dynamic<[Currency]>
     var errorHandler: ((String) -> Void)?
     
     init() {
         self.currencies = Dynamic([])
+    }
+    
+    @objc func pullToRefreshAction() {
+      fetchData()
     }
     
     func fetchData() {

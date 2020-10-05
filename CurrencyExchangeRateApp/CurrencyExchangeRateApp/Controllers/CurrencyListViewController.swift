@@ -12,7 +12,8 @@ class CurrencyListViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     lazy var currencyListViewModel = CurrencyListViewModel()
-
+    var refreshControl: UIRefreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadUI()
@@ -25,11 +26,14 @@ class CurrencyListViewController: BaseViewController {
         
         currencyListViewModel.currencies.addObserver { (_) in
             self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
         }
         
         currencyListViewModel.fetchData()
-        
+
         self.title = R.string.localizable.app_title()
+        self.refreshControl.addTarget(currencyListViewModel, action: #selector(currencyListViewModel.pullToRefreshAction), for: .valueChanged)
+        self.tableView.refreshControl = self.refreshControl
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
@@ -38,6 +42,7 @@ class CurrencyListViewController: BaseViewController {
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 44
     }
+   
 }
 
 extension CurrencyListViewController: UITableViewDataSource, UITableViewDelegate {
