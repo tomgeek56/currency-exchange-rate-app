@@ -28,6 +28,8 @@
 		AF48579F252769D7006733F8 /* CurrencyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48579E252769D7006733F8 /* CurrencyDetail.swift */; };
 		AF4857A125276DD2006733F8 /* CurrencyDetailResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4857A025276DD2006733F8 /* CurrencyDetailResult.swift */; };
 		AF90B8C62529B48B0004E301 /* ErrorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF90B8C52529B48B0004E301 /* ErrorRequest.swift */; };
+		AF9CC8492534609D00EC283E /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CC8482534609D00EC283E /* TableDataSource.swift */; };
+		AF9CC84B25348B0300EC283E /* TableUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CC84A25348B0300EC283E /* TableUtils.swift */; };
 		AFC8EF732529F1B700276D4A /* DateUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8EF722529F1B700276D4A /* DateUtilsTests.swift */; };
 		AFC8EF762529F5CF00276D4A /* CurrencyListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8EF752529F5CF00276D4A /* CurrencyListViewModelTests.swift */; };
 		AFC8EF782529FAA500276D4A /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8EF772529FAA500276D4A /* ParserTests.swift */; };
@@ -101,6 +103,8 @@
 		AF48579E252769D7006733F8 /* CurrencyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetail.swift; sourceTree = "<group>"; };
 		AF4857A025276DD2006733F8 /* CurrencyDetailResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailResult.swift; sourceTree = "<group>"; };
 		AF90B8C52529B48B0004E301 /* ErrorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorRequest.swift; sourceTree = "<group>"; };
+		AF9CC8482534609D00EC283E /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		AF9CC84A25348B0300EC283E /* TableUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableUtils.swift; sourceTree = "<group>"; };
 		AFC8EF722529F1B700276D4A /* DateUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilsTests.swift; sourceTree = "<group>"; };
 		AFC8EF752529F5CF00276D4A /* CurrencyListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModelTests.swift; sourceTree = "<group>"; };
 		AFC8EF772529FAA500276D4A /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
@@ -229,6 +233,15 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		AF9CC8472534607F00EC283E /* TablesUtils */ = {
+			isa = PBXGroup;
+			children = (
+				AF9CC8482534609D00EC283E /* TableDataSource.swift */,
+				AF9CC84A25348B0300EC283E /* TableUtils.swift */,
+			);
+			path = TablesUtils;
+			sourceTree = "<group>";
+		};
 		AFC8EF79252A01DE00276D4A /* jsons */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +292,7 @@
 		AFEDFAC925266CFF00E7C3D2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AF9CC8472534607F00EC283E /* TablesUtils */,
 				AF3B944A25288CB600588FE7 /* Utils */,
 				AF48578D252732C8006733F8 /* Navigation */,
 				AF4857822526FAED006733F8 /* Views */,
@@ -694,6 +708,7 @@
 				AFEDFACB25266D2300E7C3D2 /* Dynamic.swift in Sources */,
 				AFEDFAC22526279800E7C3D2 /* CurrencyService.swift in Sources */,
 				AFEDFAC725262B4C00E7C3D2 /* Request.swift in Sources */,
+				AF9CC84B25348B0300EC283E /* TableUtils.swift in Sources */,
 				AF3B944C25288CE300588FE7 /* DateUtils.swift in Sources */,
 				AFEDFAAF2525F7A400E7C3D2 /* BaseViewController.swift in Sources */,
 				AFEDFAB82526088600E7C3D2 /* CurrencyListViewModel.swift in Sources */,
@@ -702,6 +717,7 @@
 				AFFF67A02525F31000746EF7 /* Config.swift in Sources */,
 				AF48579325273C77006733F8 /* Storyboarded.swift in Sources */,
 				AFFF676E2525F23700746EF7 /* AppDelegate.swift in Sources */,
+				AF9CC8492534609D00EC283E /* TableDataSource.swift in Sources */,
 				AF48578F252732E8006733F8 /* Coordinator.swift in Sources */,
 				AF48578B252719A6006733F8 /* UITableView+Utilities.swift in Sources */,
 				AFEDFABD2526092F00E7C3D2 /* CurrencyList.swift in Sources */,

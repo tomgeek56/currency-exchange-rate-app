@@ -18,9 +18,15 @@ class CurrencyTableViewCell: ReusableCell {
         self.accessoryType = .disclosureIndicator
     }
     
-    func configure(_ model: Currency) {
+    private func configure(_ model: Currency) {
         self.labelTitle.text = model.name
         self.labelSubtitle.text = "\(model.value.getCurrencyRepresentation(for: model.name))"
+    }
+    
+    override func bind(model: Any) {
+        if let model = model as? Currency {
+            self.configure(model)
+        }
     }
     
 }

@@ -14,11 +14,16 @@ class CurrencyDetailTableViewCell: ReusableCell {
     @IBOutlet weak var labelBaseCurrency: UILabel!
     @IBOutlet weak var labelSecondCurrency: UILabel!
     
-    func configure(_ model: CurrencyDetailResult) {
-        
+    fileprivate func configure(_ model: CurrencyDetailResult) {
         labelDate.text = model.date
         labelBaseCurrency.text = "\(model.baseCurrency.getStringRepresentation())"
         labelSecondCurrency.text = "\(model.secondCurrency.getStringRepresentation())"
+    }
+    
+    override func bind(model: Any) {
+        if let model = model as? CurrencyDetailResult {
+            self.configure(model)
+        }
     }
     
 }

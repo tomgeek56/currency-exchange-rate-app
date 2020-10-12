@@ -23,4 +23,8 @@ class ReusableCell: UITableViewCell {
         self.selectionStyle = .none
     }
     
+    func bind(model: Any) {
+        
+    }
+    
 }

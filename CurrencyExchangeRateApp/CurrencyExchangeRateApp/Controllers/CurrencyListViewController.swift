@@ -13,6 +13,7 @@ class CurrencyListViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     lazy var currencyListViewModel = CurrencyListViewModel()
     var refreshControl: UIRefreshControl = UIRefreshControl()
+    var dataSource = TableDataSource<Currency, CurrencyTableViewCell>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,8 @@ class CurrencyListViewController: BaseViewController {
             self.showErrorAlert(message)
         }
         
-        currencyListViewModel.currencies.addObserver { (_) in
+        currencyListViewModel.currencies.addObserver { (currencies) in
+            self.dataSource.setData(data: currencies)
             self.tableView.reloadData()
             self.refreshControl.endRefreshing()
         }
@@ -34,34 +36,11 @@ class CurrencyListViewController: BaseViewController {
         self.title = R.string.localizable.app_title()
         self.refreshControl.addTarget(currencyListViewModel, action: #selector(currencyListViewModel.pullToRefreshAction), for: .valueChanged)
         self.tableView.refreshControl = self.refreshControl
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
-        self.tableView.tableHeaderView = UIView(frame: CGRect.zero)
-        self.tableView.registerNibAndReuseIdentifierForCell(cell: CurrencyTableViewCell.self)
-        self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 44
-    }
-   
-}
-
-extension CurrencyListViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currencyListViewModel.currencies.value.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        self.tableView.setDataSourceAndDelegate(delegate: dataSource)
+        self.tableView.initView(CurrencyTableViewCell.self)
         
-        guard let cell =  tableView.dequeueReusableCell(withIdentifier: CurrencyTableViewCell.identifier, for: indexPath) as? CurrencyTableViewCell else {
-            return UITableViewCell()
+        dataSource.userDidTapCellAtIndex = { indexPath in
+            self.coordinator?.currencyDetail(currency: self.currencyListViewModel.currencies.value[indexPath.row])
         }
-        
-        cell.configure(currencyListViewModel.currencies.value[indexPath.row])
-        return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.coordinator?.currencyDetail(currency: currencyListViewModel.currencies.value[indexPath.row])
-    }
-    
 }

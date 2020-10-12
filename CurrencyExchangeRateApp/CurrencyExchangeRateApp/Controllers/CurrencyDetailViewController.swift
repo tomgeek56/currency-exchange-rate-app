@@ -18,7 +18,8 @@ class CurrencyDetailViewController: BaseViewController {
     
     var currency: Currency?
     var currencyDetailViewModel: CurrencyDetailViewModel?
-    
+    var dataSource = TableDataSource<CurrencyDetailResult, CurrencyDetailTableViewCell>()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         currencyDetailViewModel = CurrencyDetailViewModel(self.currency)
@@ -32,13 +33,8 @@ class CurrencyDetailViewController: BaseViewController {
             self.showErrorAlert(message)
         }
         
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
-        self.tableView.tableHeaderView = UIView(frame: CGRect.zero)
-        self.tableView.registerNibAndReuseIdentifierForCell(cell: CurrencyDetailTableViewCell.self)
-        self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 44
+        self.tableView.setDataSourceAndDelegate(delegate: dataSource)
+        self.tableView.initView(CurrencyDetailTableViewCell.self)
         
         currencyDetailViewModel?.currencyBase.addObserver(listener: { (value) in
             self.labelBaseCurrency.text = value.name
@@ -50,28 +46,10 @@ class CurrencyDetailViewController: BaseViewController {
             self.labelSecondCurrencyDetail.text = value.getStringRepresentation()
         })
         
-        currencyDetailViewModel?.results.addObserver(listener: { (_) in
+        currencyDetailViewModel?.results.addObserver(listener: { (currencies) in
+            self.dataSource.setData(data: currencies)
             self.tableView.reloadData()
         })
         
     }
-    
-}
-
-extension CurrencyDetailViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currencyDetailViewModel?.results.value.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell =  tableView.dequeueReusableCell(withIdentifier: CurrencyDetailTableViewCell.identifier, for: indexPath) as? CurrencyDetailTableViewCell else {
-            return UITableViewCell()
-        }
-        
-        cell.configure(currencyDetailViewModel!.results.value[indexPath.row])
-        
-        return cell
-    }
-    
 }
