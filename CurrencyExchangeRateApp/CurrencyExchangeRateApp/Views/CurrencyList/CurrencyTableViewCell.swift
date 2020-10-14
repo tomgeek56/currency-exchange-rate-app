@@ -10,12 +10,26 @@ import UIKit
 
 class CurrencyTableViewCell: ReusableCell {
     
+    @IBOutlet weak var viewContent: UIView!
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelSubtitle: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.accessoryType = .disclosureIndicator
+        uiCustomization()
+    
+    }
+    
+    private func uiCustomization() {
+        self.viewContent.layer.cornerRadius = Theme.SIZES.CORNER_RADUIS
+        self.accessoryType = .none
+        self.contentView.backgroundColor = UIColor.clear
+        self.viewContent.layer.shadowColor = Theme.Colors.SHADOW_COLOR.cgColor
+        self.viewContent.layer.shadowOpacity = 0.5
+        self.viewContent.layer.shadowOffset = .zero
+        self.viewContent.layer.shadowRadius = 3
+        self.viewContent.layer.borderWidth = 1
+        self.viewContent.layer.borderColor = Theme.Colors.SHADOW_COLOR.cgColor
     }
     
     private func configure(_ model: Currency) {

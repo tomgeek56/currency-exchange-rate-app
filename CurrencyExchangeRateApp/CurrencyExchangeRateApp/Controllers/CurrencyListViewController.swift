@@ -38,9 +38,10 @@ class CurrencyListViewController: BaseViewController {
         self.tableView.refreshControl = self.refreshControl
         self.tableView.setDataSourceAndDelegate(delegate: dataSource)
         self.tableView.initView(CurrencyTableViewCell.self)
+        self.tableView.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
         
         dataSource.userDidTapCellAtIndex = { indexPath in
-            self.coordinator?.currencyDetail(currency: self.currencyListViewModel.currencies.value[indexPath.row])
+            self.coordinator?.currencyDetail(currency: self.dataSource[indexPath.row])
         }
     }
 }

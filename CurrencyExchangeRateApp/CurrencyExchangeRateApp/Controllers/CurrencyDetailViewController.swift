@@ -53,3 +53,12 @@ class CurrencyDetailViewController: BaseViewController {
         
     }
 }
+
+extension CurrencyDetailViewController : UIViewControllerTransitioningDelegate{
+    func animationController(forPresented presented: UIViewController,
+                             presenting: UIViewController,
+                             source: UIViewController)
+      -> UIViewControllerAnimatedTransitioning? {
+        return FlipPresentAnimationController(originFrame: self.view.frame)
+    }
+}

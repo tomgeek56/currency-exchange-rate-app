@@ -2,6 +2,7 @@ excluded: # paths to ignore during linting. overridden by `included`.
   - R.generated.swift
   - Pods
   - CurrencyExchangeRateApp/Resources
+  - CurrencyExchangeRateApp/Helpers/Theme/UIColor+HEX.swift
 # parameterized rules can be customized from this configuration file
 file_length:
   - 700

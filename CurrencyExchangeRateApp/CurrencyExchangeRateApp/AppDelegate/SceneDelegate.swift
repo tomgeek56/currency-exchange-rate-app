@@ -15,7 +15,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         let navController = R.storyboard.baseNavigationViewController.instantiateInitialViewController()!
         coordinator = MainCoordinator(navigationController: navController)
-        
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
         coordinator?.start()

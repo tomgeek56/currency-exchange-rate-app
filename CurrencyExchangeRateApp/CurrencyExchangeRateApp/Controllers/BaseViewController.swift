@@ -11,7 +11,7 @@ import UIKit
 class BaseViewController: UIViewController, Storyboarded {
     
     weak var coordinator: MainCoordinator?
-    
+        
     // swiftlint:disable force_cast
     static func getInstance() -> Self {
         let storyboardName = String(describing: self).replacingOccurrences(of: "ViewController", with: "")
@@ -30,6 +30,11 @@ class BaseViewController: UIViewController, Storyboarded {
         }
         ))
         self.present(controller, animated: true, completion: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = Theme.Colors.BG_COLOR
     }
     
 }

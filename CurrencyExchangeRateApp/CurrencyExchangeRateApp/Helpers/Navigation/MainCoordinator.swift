@@ -26,7 +26,13 @@ class MainCoordinator: Coordinator {
         let vc = CurrencyDetailViewController.getInstance()        
         vc.coordinator = self
         vc.currency = currency
-        self.navigationController.pushViewController(vc, animated: true)
+        
+       // vc.transitioningDelegate = vc
+        vc.modalPresentationStyle = .popover
+//        self.navigationController.pushViewController(vc, animated: true)
+        self.navigationController.present(vc, animated: true) {
+            
+        }
     }
     
 }

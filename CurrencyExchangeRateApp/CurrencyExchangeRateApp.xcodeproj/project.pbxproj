@@ -30,6 +30,11 @@
 		AF90B8C62529B48B0004E301 /* ErrorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF90B8C52529B48B0004E301 /* ErrorRequest.swift */; };
 		AF9CC8492534609D00EC283E /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CC8482534609D00EC283E /* TableDataSource.swift */; };
 		AF9CC84B25348B0300EC283E /* TableUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9CC84A25348B0300EC283E /* TableUtils.swift */; };
+		AFA482CB253701E8003163E9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA482CA253701E8003163E9 /* Theme.swift */; };
+		AFA482CD25370247003163E9 /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA482CC25370246003163E9 /* UIColor+HEX.swift */; };
+		AFA482CF25370305003163E9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AFA482CE25370304003163E9 /* .swiftlint.yml */; };
+		AFA482D225371BC6003163E9 /* ModalPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA482D125371BC6003163E9 /* ModalPresentAnimationController.swift */; };
+		AFA482D525371C5B003163E9 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA482D425371C5B003163E9 /* AnimationHelper.swift */; };
 		AFC8EF732529F1B700276D4A /* DateUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8EF722529F1B700276D4A /* DateUtilsTests.swift */; };
 		AFC8EF762529F5CF00276D4A /* CurrencyListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8EF752529F5CF00276D4A /* CurrencyListViewModelTests.swift */; };
 		AFC8EF782529FAA500276D4A /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8EF772529FAA500276D4A /* ParserTests.swift */; };
@@ -105,6 +110,11 @@
 		AF90B8C52529B48B0004E301 /* ErrorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorRequest.swift; sourceTree = "<group>"; };
 		AF9CC8482534609D00EC283E /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		AF9CC84A25348B0300EC283E /* TableUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableUtils.swift; sourceTree = "<group>"; };
+		AFA482CA253701E8003163E9 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		AFA482CC25370246003163E9 /* UIColor+HEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX.swift"; sourceTree = "<group>"; };
+		AFA482CE25370304003163E9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		AFA482D125371BC6003163E9 /* ModalPresentAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentAnimationController.swift; sourceTree = "<group>"; };
+		AFA482D425371C5B003163E9 /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		AFC8EF722529F1B700276D4A /* DateUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilsTests.swift; sourceTree = "<group>"; };
 		AFC8EF752529F5CF00276D4A /* CurrencyListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModelTests.swift; sourceTree = "<group>"; };
 		AFC8EF772529FAA500276D4A /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
@@ -242,6 +252,31 @@
 			path = TablesUtils;
 			sourceTree = "<group>";
 		};
+		AFA482C9253701D5003163E9 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				AFA482CC25370246003163E9 /* UIColor+HEX.swift */,
+				AFA482CA253701E8003163E9 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AFA482D025371BA6003163E9 /* AnimationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFA482D125371BC6003163E9 /* ModalPresentAnimationController.swift */,
+			);
+			path = AnimationControllers;
+			sourceTree = "<group>";
+		};
+		AFA482D325371C51003163E9 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				AFA482D425371C5B003163E9 /* AnimationHelper.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		AFC8EF79252A01DE00276D4A /* jsons */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +327,8 @@
 		AFEDFAC925266CFF00E7C3D2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AFA482D325371C51003163E9 /* Animation */,
+				AFA482C9253701D5003163E9 /* Theme */,
 				AF9CC8472534607F00EC283E /* TablesUtils */,
 				AF3B944A25288CB600588FE7 /* Utils */,
 				AF48578D252732C8006733F8 /* Navigation */,
@@ -371,6 +408,7 @@
 		AFFF679E2525F2EE00746EF7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AFA482CE25370304003163E9 /* .swiftlint.yml */,
 				AFE7846C2528CFEA0070BAC3 /* Strings */,
 				AF4857882527162A006733F8 /* R.generated.swift */,
 				AFFF677B2525F23A00746EF7 /* Info.plist */,
@@ -393,6 +431,7 @@
 		AFFF67A22525F37900746EF7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AFA482D025371BA6003163E9 /* AnimationControllers */,
 				AFFF67A42525F3AE00746EF7 /* CurrencyListViewController.swift */,
 				AFEDFAAE2525F7A400E7C3D2 /* BaseViewController.swift */,
 				AF48579825274D06006733F8 /* CurrencyDetailViewController.swift */,
@@ -530,6 +569,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA482CF25370305003163E9 /* .swiftlint.yml in Resources */,
 				AFC8EF81252A0B1E00276D4A /* currencyListSample.json in Resources */,
 				AF4857812526FAD9006733F8 /* CurrencyTableViewCell.xib in Resources */,
 				AFE7846E2528D0010070BAC3 /* Localizable.strings in Resources */,
@@ -707,6 +747,7 @@
 				AF4857802526FAD9006733F8 /* CurrencyTableViewCell.swift in Sources */,
 				AFEDFACB25266D2300E7C3D2 /* Dynamic.swift in Sources */,
 				AFEDFAC22526279800E7C3D2 /* CurrencyService.swift in Sources */,
+				AFA482CD25370247003163E9 /* UIColor+HEX.swift in Sources */,
 				AFEDFAC725262B4C00E7C3D2 /* Request.swift in Sources */,
 				AF9CC84B25348B0300EC283E /* TableUtils.swift in Sources */,
 				AF3B944C25288CE300588FE7 /* DateUtils.swift in Sources */,
@@ -719,12 +760,14 @@
 				AFFF676E2525F23700746EF7 /* AppDelegate.swift in Sources */,
 				AF9CC8492534609D00EC283E /* TableDataSource.swift in Sources */,
 				AF48578F252732E8006733F8 /* Coordinator.swift in Sources */,
+				AFA482CB253701E8003163E9 /* Theme.swift in Sources */,
 				AF48578B252719A6006733F8 /* UITableView+Utilities.swift in Sources */,
 				AFEDFABD2526092F00E7C3D2 /* CurrencyList.swift in Sources */,
 				AF48579F252769D7006733F8 /* CurrencyDetail.swift in Sources */,
 				AF48579925274D06006733F8 /* CurrencyDetailViewController.swift in Sources */,
 				AF485797252744F2006733F8 /* BaseNavigationViewController.swift in Sources */,
 				AFEDFAC025260FA300E7C3D2 /* Service.swift in Sources */,
+				AFA482D225371BC6003163E9 /* ModalPresentAnimationController.swift in Sources */,
 				AFFF67A52525F3AE00746EF7 /* CurrencyListViewController.swift in Sources */,
 				AF3B9450252892E000588FE7 /* CurrencyUtils.swift in Sources */,
 				AF90B8C62529B48B0004E301 /* ErrorRequest.swift in Sources */,
@@ -733,6 +776,7 @@
 				AF4857912527336A006733F8 /* MainCoordinator.swift in Sources */,
 				AFEDFABB252608C600E7C3D2 /* Currency.swift in Sources */,
 				AFEDFAC525262AAD00E7C3D2 /* Requestable.swift in Sources */,
+				AFA482D525371C5B003163E9 /* AnimationHelper.swift in Sources */,
 				AF4857842526FBEE006733F8 /* BaseTableViewCell.swift in Sources */,
 				AF4857A125276DD2006733F8 /* CurrencyDetailResult.swift in Sources */,
 				AFFF67702525F23700746EF7 /* SceneDelegate.swift in Sources */,

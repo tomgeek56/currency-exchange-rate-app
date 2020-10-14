@@ -132,10 +132,18 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.file` struct is generated, and contains static references to 1 files.
+  /// This `R.file` struct is generated, and contains static references to 2 files.
   struct file {
+    /// Resource file `.swiftlint.yml`.
+    static let swiftlintYml = Rswift.FileResource(bundle: R.hostingBundle, name: ".swiftlint", pathExtension: "yml")
     /// Resource file `currencyListSample.json`.
     static let currencyListSampleJson = Rswift.FileResource(bundle: R.hostingBundle, name: "currencyListSample", pathExtension: "json")
+
+    /// `bundle.url(forResource: ".swiftlint", withExtension: "yml")`
+    static func swiftlintYml(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.swiftlintYml
+      return fileResource.bundle.url(forResource: fileResource)
+    }
 
     /// `bundle.url(forResource: "currencyListSample", withExtension: "json")`
     static func currencyListSampleJson(_: Void = ()) -> Foundation.URL? {
@@ -146,10 +154,19 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 1 images.
+  /// This `R.image` struct is generated, and contains static references to 2 images.
   struct image {
+    /// Image `european-union`.
+    static let europeanUnion = Rswift.ImageResource(bundle: R.hostingBundle, name: "european-union")
     /// Image `icons8-forward-button-50`.
     static let icons8ForwardButton50 = Rswift.ImageResource(bundle: R.hostingBundle, name: "icons8-forward-button-50")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "european-union", bundle: ..., traitCollection: ...)`
+    static func europeanUnion(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.europeanUnion, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "icons8-forward-button-50", bundle: ..., traitCollection: ...)`
@@ -343,12 +360,19 @@ struct R: Rswift.Validatable {
 struct _R: Rswift.Validatable {
   static func validate() throws {
     #if os(iOS) || os(tvOS)
+    try nib.validate()
+    #endif
+    #if os(iOS) || os(tvOS)
     try storyboard.validate()
     #endif
   }
 
   #if os(iOS) || os(tvOS)
-  struct nib {
+  struct nib: Rswift.Validatable {
+    static func validate() throws {
+      try _CurrencyTableViewCell.validate()
+    }
+
     struct _CurrencyDetailTableViewCell: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "CurrencyDetailTableViewCell"
@@ -360,12 +384,18 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _CurrencyTableViewCell: Rswift.NibResourceType {
+    struct _CurrencyTableViewCell: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "CurrencyTableViewCell"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CurrencyTableViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CurrencyTableViewCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "european-union", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'european-union' is used in nib 'CurrencyTableViewCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
       }
 
       fileprivate init() {}
