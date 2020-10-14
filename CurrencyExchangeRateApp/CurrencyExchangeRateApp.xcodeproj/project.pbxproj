@@ -35,6 +35,8 @@
 		AFA482CF25370305003163E9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AFA482CE25370304003163E9 /* .swiftlint.yml */; };
 		AFA482D225371BC6003163E9 /* ModalPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA482D125371BC6003163E9 /* ModalPresentAnimationController.swift */; };
 		AFA482D525371C5B003163E9 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA482D425371C5B003163E9 /* AnimationHelper.swift */; };
+		AFA482D725372D2B003163E9 /* AnimationCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA482D625372D2B003163E9 /* AnimationCellFactory.swift */; };
+		AFA482D925372E2D003163E9 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA482D825372E2D003163E9 /* Animator.swift */; };
 		AFC8EF732529F1B700276D4A /* DateUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8EF722529F1B700276D4A /* DateUtilsTests.swift */; };
 		AFC8EF762529F5CF00276D4A /* CurrencyListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8EF752529F5CF00276D4A /* CurrencyListViewModelTests.swift */; };
 		AFC8EF782529FAA500276D4A /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8EF772529FAA500276D4A /* ParserTests.swift */; };
@@ -115,6 +117,8 @@
 		AFA482CE25370304003163E9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		AFA482D125371BC6003163E9 /* ModalPresentAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentAnimationController.swift; sourceTree = "<group>"; };
 		AFA482D425371C5B003163E9 /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
+		AFA482D625372D2B003163E9 /* AnimationCellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCellFactory.swift; sourceTree = "<group>"; };
+		AFA482D825372E2D003163E9 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		AFC8EF722529F1B700276D4A /* DateUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilsTests.swift; sourceTree = "<group>"; };
 		AFC8EF752529F5CF00276D4A /* CurrencyListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModelTests.swift; sourceTree = "<group>"; };
 		AFC8EF772529FAA500276D4A /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
@@ -273,6 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				AFA482D425371C5B003163E9 /* AnimationHelper.swift */,
+				AFA482D625372D2B003163E9 /* AnimationCellFactory.swift */,
+				AFA482D825372E2D003163E9 /* Animator.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -755,6 +761,7 @@
 				AFEDFAB82526088600E7C3D2 /* CurrencyListViewModel.swift in Sources */,
 				AF48579D252758C7006733F8 /* CurrencyDetailViewModel.swift in Sources */,
 				AF3B944825287D5B00588FE7 /* CurrencyDetailTableViewCell.swift in Sources */,
+				AFA482D725372D2B003163E9 /* AnimationCellFactory.swift in Sources */,
 				AFFF67A02525F31000746EF7 /* Config.swift in Sources */,
 				AF48579325273C77006733F8 /* Storyboarded.swift in Sources */,
 				AFFF676E2525F23700746EF7 /* AppDelegate.swift in Sources */,
@@ -765,6 +772,7 @@
 				AFEDFABD2526092F00E7C3D2 /* CurrencyList.swift in Sources */,
 				AF48579F252769D7006733F8 /* CurrencyDetail.swift in Sources */,
 				AF48579925274D06006733F8 /* CurrencyDetailViewController.swift in Sources */,
+				AFA482D925372E2D003163E9 /* Animator.swift in Sources */,
 				AF485797252744F2006733F8 /* BaseNavigationViewController.swift in Sources */,
 				AFEDFAC025260FA300E7C3D2 /* Service.swift in Sources */,
 				AFA482D225371BC6003163E9 /* ModalPresentAnimationController.swift in Sources */,

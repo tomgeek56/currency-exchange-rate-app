@@ -43,5 +43,6 @@ class CurrencyListViewController: BaseViewController {
         dataSource.userDidTapCellAtIndex = { indexPath in
             self.coordinator?.currencyDetail(currency: self.dataSource[indexPath.row])
         }
+        dataSource.animated = true
     }
 }

@@ -10,8 +10,18 @@ import Foundation
 import UIKit
 
 class TableDataSource <T: Any, C: ReusableCell> : NSObject, UITableViewDelegate, UITableViewDataSource {
+    
+    var animated: Bool? {
+        didSet {
+            if animated ?? false {
+                self.animator = Animator(animation: AnimationCellFactory.makeAnimation())
+            }
+        }
+    }
+    
     var data: [T] = []
     var userDidTapCellAtIndex: ((IndexPath) -> Void)?
+    var animator: Animator?
     
     func setData(data: [T]) {
         self.data = data
@@ -32,6 +42,15 @@ class TableDataSource <T: Any, C: ReusableCell> : NSObject, UITableViewDelegate,
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         userDidTapCellAtIndex?(indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        guard let animator = self.animator else {
+            return
+        }
+        
+        animator.animate(cell: cell, indexPath: indexPath)
     }
 }
 
