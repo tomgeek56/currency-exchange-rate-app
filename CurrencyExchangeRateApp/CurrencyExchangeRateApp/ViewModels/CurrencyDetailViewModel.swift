@@ -49,4 +49,3 @@ struct CurrencyDetailViewModel {
         })
     }
 }
-//test changes dev 2
