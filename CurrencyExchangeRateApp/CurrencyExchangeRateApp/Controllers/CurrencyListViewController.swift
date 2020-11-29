@@ -48,3 +48,5 @@ class CurrencyListViewController: BaseViewController {
 }
 //test master conflict
 // test commit
+// test commit 1
+// test commit 2
