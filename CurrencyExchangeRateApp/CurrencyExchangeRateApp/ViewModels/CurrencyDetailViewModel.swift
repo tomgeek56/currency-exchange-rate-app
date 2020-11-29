@@ -37,6 +37,7 @@ struct CurrencyDetailViewModel {
         return (fromDate, date)
     }
     
+    //sdsdffds
     func fetchData() {
         let dates = getDatesRangeFromPreviousMonday(Date())
         
