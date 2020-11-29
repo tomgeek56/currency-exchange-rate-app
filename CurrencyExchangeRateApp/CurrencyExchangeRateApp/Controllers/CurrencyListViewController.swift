@@ -46,3 +46,4 @@ class CurrencyListViewController: BaseViewController {
         dataSource.animated = true
     }
 }
+//test master conflict
