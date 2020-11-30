@@ -51,4 +51,3 @@ struct CurrencyDetailViewModel {
         })
     }
 }
-//test cos z developa model model2
